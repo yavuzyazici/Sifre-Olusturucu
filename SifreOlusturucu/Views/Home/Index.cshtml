@@ -1,0 +1,184 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model SifreOlusturucu.Models.Password
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Rastgele Parola Oluşturucu</title>
+
+    <meta name="description" content="Rastgele Şifre Oluşturucu, çevrimiçi hesaplarınızı güvende tutmak için güçlü ve güvenli şifreler oluşturun." />
+
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/css/style.css" data-precedence="next" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
+
+</head>
+
+<body class="container overflow-x-hidden transition-all ease-linear duration-200 __className_8c73d4">
+    <div class="w-full h-20 gap-10 flex items-center justify-center">
+        <img alt="Şifre Oluşturucu" loading="lazy"
+             width="300" height="48" decoding="async" data-nimg="1" class="max-[640px]:w-[250px]"
+             style="color:transparent" src="/sifre-olusturucu.svg" />
+    </div>
+    <div class="gap-32 flex flex-col items-center justify-center">
+        <main>
+            <section class="flex items-center justify-center">
+                <div>
+                    <div class="w-[1600px] h-[430px] bg-[url(/resimler/background-white.webp)] bg-no-repeat bg-cover fs-container flex flex-col items-center justify-center text-center transition-all duration-200">
+                        <h2 class="text-4xl font-bold text-primary mb-8 max-[540px]:text-3xl">
+                            Rastgele Şifre Oluşturucu
+                        </h2>
+                        <p class="text-[#343072] mb-16 max-[540px]:text-sm">
+                            Güvenli hesaplara sahip olmak için <strong>şifre oluştur</strong>.
+                        </p>
+                        <div class="mx-auto space-y-6">
+                            <div id="sifreolusturucuDiv" class="relative input-container @($"validate-{Model.SecurityScore}")">
+                                <input type="text"
+                                       id="generated-password"
+                                       class="p-6 block w-[47rem] font-medium text-primary rounded-full border-gray-200 validate-green focus:outline-none disabled:opacity-50 disabled:pointer-events-none max-[810px]:w-[40rem] max-[680px]:w-[35rem] max-[600px]:w-[30rem] max-[540px]:w-[25rem] max-[480px]:w-[20rem]"
+                                       value="@ViewBag.GeneratedPassword" readonly />
+
+                                <div class="absolute inset-y-0 end-0 flex items-center z-20 pe-2 ">
+                                    <button class="font-medium text-white bg-primary px-10 py-4 rounded-full cursor-pointer"
+                                            aria-label="Copy Password" onclick="copyPassword()">
+                                        <span class="block max-[480px]:hidden">Kopyala</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                                                                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                                                                  stroke-linecap="round" stroke-linejoin="round"
+                                                                                                  class="hidden max-[480px]:block">
+                                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+                                            <path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
+                                            <path d="M16 4h2a2 2 0 0 1 2 2v4"></path>
+                                            <path d="M21 14H11"></path>
+                                            <path d="m15 10-4 4 4 4"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="gap-6 flex flex-col items-center justify-center">
+                                <div class="max-w-[23rem] w-full gap-4 flex items-center justify-center">
+                                    <button class="px-2.5 text-2xl font-bold text-bg-primary-dark bg-bg-primary rounded-md"
+                                            onclick="updateLength(-1)">
+                                        -
+                                    </button>
+                                    <input asp-for="Length" id="length" type="range" min="1" max="50" class="password-length-element"
+                                           aria-label="Password Length" name="Length" value="@Model.Length" oninput="updateLengthValue(this.value)" />
+                                    <button class="px-2.5 text-2xl font-bold text-bg-primary-dark bg-bg-primary rounded-md"
+                                            onclick="updateLength(1)">
+                                        +
+                                    </button>
+                                </div>
+                                <div class="gap-8 flex items-center justify-center">
+                                    <div class="gap-2 flex items-center justify-center">
+                                        <label class="checkbox-label">
+                                            <input asp-for="useUpper" type="checkbox"
+                                                   class="checkbox" name="useUpper" onchange="updatePassword()" />
+                                            <span class="checkbox-custom"></span>
+                                        </label><span class="text-sm font-semibold text-primary">ABC</span>
+                                    </div>
+                                    <div class="gap-2 flex items-center justify-center">
+                                        <label class="checkbox-label">
+                                            <input asp-for="useLower" type="checkbox"
+                                                   class="checkbox" name="useLower" onchange="updatePassword()" /><span class="checkbox-custom"></span>
+                                        </label><span class="text-sm font-semibold text-primary">abc</span>
+                                    </div>
+                                    <div class="gap-2 flex items-center justify-center">
+                                        <label class="checkbox-label">
+                                            <input asp-for="useNumber" type="checkbox"
+                                                   class="checkbox" name="useNumber" onchange="updatePassword()" /><span class="checkbox-custom"></span>
+                                        </label><span class="text-sm font-semibold text-primary">123</span>
+                                    </div>
+                                    <div class="gap-2 flex items-center justify-center">
+                                        <label class="checkbox-label">
+                                            <input asp-for="useSpecial" type="checkbox"
+                                                   class="checkbox" name="useSpecial" onchange="updatePassword()" /><span class="checkbox-custom"></span>
+                                        </label><span class="text-sm font-semibold text-primary">#$&</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section>
+            <h2 class="text-3xl font-bold text-text-dark mb-2 max-[540px]:text-2xl">Bir parolayı güçlü yapan nedir?</h2>
+            <div class="w-full flex items-center justify-between">
+                <div>
+                    <img alt="icon" loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
+                         style="color:transparent"/>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const lengthInput = document.getElementById('length');
+            const generatedPasswordInput = document.getElementById('generated-password');
+            const sifreolusturucuDiv = document.getElementById('sifreolusturucuDiv');
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function () {
+                    const checkedCheckboxes = Array.from(checkboxes).filter(cb => cb.checked);
+                    if (checkedCheckboxes.length === 0) {
+                        this.checked = true;
+                    }
+                    updatePassword();
+                });
+            });
+
+            lengthInput.addEventListener('input', function () {
+                updatePassword();
+            });
+
+            window.updateLength = function (change) {
+                const currentValue = parseInt(lengthInput.value);
+                const newValue = currentValue + change;
+                if (newValue >= parseInt(lengthInput.min) && newValue <= parseInt(lengthInput.max)) {
+                    lengthInput.value = newValue;
+                    updatePassword();
+                }
+            }
+
+            window.updatePassword = function () {
+                const formData = new FormData();
+                formData.append('length', lengthInput.value);
+                formData.append('useUpper', document.querySelector('input[name="useUpper"]').checked);
+                formData.append('useLower', document.querySelector('input[name="useLower"]').checked);
+                formData.append('useNumber', document.querySelector('input[name="useNumber"]').checked);
+                formData.append('useSpecial', document.querySelector('input[name="useSpecial"]').checked);
+
+                fetch('@Url.Action("GeneratePassword", "Home")', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        generatedPasswordInput.value = data.generatedPassword;
+                        sifreolusturucuDiv.className = `relative input-container validate-${data.securityScore}`;
+                    })
+                    .catch(error => console.error('Error:', error));
+            }
+
+            function copyPassword() {
+                var copyText = document.getElementById("generated-password");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999);
+                document.execCommand("copy");
+                alert("Parola kopyalandı: " + copyText.value);
+            }
+
+            // Initial password generation
+            updatePassword();
+        });
+
+        function updateLengthValue(value) {
+            updatePassword();
+        }
+    </script>
+</body>
+
+</html>
