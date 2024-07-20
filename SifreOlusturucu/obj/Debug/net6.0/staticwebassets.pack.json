@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\background-white.webp",
+      "PackagePath": "staticwebassets\\background-white.webp"
+    },
+    {
       "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
@@ -13,16 +17,52 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\background-white.webp",
-      "PackagePath": "staticwebassets\\resimler\\background-white.webp"
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\js\\tailwind.config.js",
+      "PackagePath": "staticwebassets\\js\\tailwind.config.js"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\1.webp",
+      "PackagePath": "staticwebassets\\resimler\\1.webp"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\2.webp",
+      "PackagePath": "staticwebassets\\resimler\\2.webp"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\3.webp",
+      "PackagePath": "staticwebassets\\resimler\\3.webp"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\4.webp",
+      "PackagePath": "staticwebassets\\resimler\\4.webp"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\5.webp",
+      "PackagePath": "staticwebassets\\resimler\\5.webp"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\6.webp",
+      "PackagePath": "staticwebassets\\resimler\\6.webp"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\arrow-down.svg",
+      "PackagePath": "staticwebassets\\resimler\\arrow-down.svg"
     },
     {
       "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\background.webp",
       "PackagePath": "staticwebassets\\resimler\\background.webp"
     },
     {
-      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\sifre-olusturucu.svg",
-      "PackagePath": "staticwebassets\\resimler\\sifre-olusturucu.svg"
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\icon-1.svg",
+      "PackagePath": "staticwebassets\\resimler\\icon-1.svg"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\icon-2.svg",
+      "PackagePath": "staticwebassets\\resimler\\icon-2.svg"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\icon-3.svg",
+      "PackagePath": "staticwebassets\\resimler\\icon-3.svg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.SifreOlusturucu.Microsoft.AspNetCore.StaticWebAssets.props",

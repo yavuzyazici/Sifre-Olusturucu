@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\css\\tailwind.css",
+      "PackagePath": "staticwebassets\\css\\tailwind.css"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\js\\tailwind.config.js",
+      "PackagePath": "staticwebassets\\js\\tailwind.config.js"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\background-white.webp",
+      "PackagePath": "staticwebassets\\resimler\\background-white.webp"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\background.webp",
+      "PackagePath": "staticwebassets\\resimler\\background.webp"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\sifre-olusturucu.svg",
+      "PackagePath": "staticwebassets\\resimler\\sifre-olusturucu.svg"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.SifreOlusturucu.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.SifreOlusturucu.props",
+      "PackagePath": "build\\SifreOlusturucu.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.SifreOlusturucu.props",
+      "PackagePath": "buildMultiTargeting\\SifreOlusturucu.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.SifreOlusturucu.props",
+      "PackagePath": "buildTransitive\\SifreOlusturucu.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

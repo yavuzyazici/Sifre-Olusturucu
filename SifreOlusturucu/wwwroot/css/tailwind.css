@@ -27,6 +27,10 @@
     --bg-card-hover: #fafcff;
 }
 
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
 .fs-container {
     width: 100vw;
     max-width: 100vw;
@@ -39,6 +43,12 @@
     top: 0;
     height: 100%;
     pointer-events: none;
+}
+
+.validate::before {
+    width: 100%;
+    border-radius: 999px;
+    box-shadow: 0 6px 0 0 var(--bg-primary)
 }
 
 .validate-1::before {
@@ -76,18 +86,16 @@
     height: 14px;
     border-radius: 32px;
     -webkit-appearance: none;
-    -moz-appearance: none;
     background-color: var(--text-light);
 }
 
-    .password-length-element::-webkit-slider-thumb + .password-length-element::-moz-range-thumb {
+    .password-length-element::-webkit-slider-thumb {
         height: 32px;
         width: 32px;
         cursor: pointer;
         border-radius: 99px;
         background: #FFFFFF;
         -webkit-appearance: none;
-        -moz-appearance: none;
         border: 3px solid var(--bg-primary-dark);
     }
 
@@ -119,7 +127,7 @@
 
     .checkbox:checked + .checkbox-custom::after {
         content: '';
-        top: 45%;
+        top: 50%;
         left: 50%;
         width: 7px;
         height: 12px;
@@ -129,3 +137,27 @@
         border-color: var(--bg-primary-dark);
         transform: translate(-50%, -50%) rotate(45deg);
     }
+
+.accordion-icon {
+    transition: transform 0.4s ease-in;
+}
+
+    .accordion-icon.accordion-active {
+        transform: rotate(-180deg);
+    }
+
+.accordion-header {
+    transition: background-color 0.4s ease-in;
+}
+
+    .accordion-header.accordion-active {
+        background-color: var(--bg-primary);
+    }
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 2rem;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+}

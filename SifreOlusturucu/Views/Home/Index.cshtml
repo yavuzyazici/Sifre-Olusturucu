@@ -6,48 +6,46 @@
 
 <head>
     <title>Rastgele Parola Oluşturucu</title>
-
-    <meta name="description" content="Rastgele Şifre Oluşturucu, çevrimiçi hesaplarınızı güvende tutmak için güçlü ve güvenli şifreler oluşturun." />
-
+    <meta name="description"
+          content="Rastgele Şifre Oluşturucu, çevrimiçi hesaplarınızı güvende tutmak için güçlü ve güvenli şifreler oluşturun." />
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link rel="stylesheet" href="/css/style.css" data-precedence="next" />
+    <link href="./css/style.css" rel="stylesheet">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
 </head>
 
 <body class="container overflow-x-hidden transition-all ease-linear duration-200 __className_8c73d4">
-    <div class="w-full h-20 gap-10 flex items-center justify-center">
-        <img alt="Şifre Oluşturucu" loading="lazy"
-             width="300" height="48" decoding="async" data-nimg="1" class="max-[640px]:w-[250px]"
-             style="color:transparent" src="/sifre-olusturucu.svg" />
-    </div>
-    <div class="gap-32 flex flex-col items-center justify-center">
-        <main>
+    <header class="w-full h-20 gap-10 flex items-center justify-center bg-[#F5F5F5] fs-container">
+        <img alt="Şifre Oluşturucu" loading="lazy" width="300" height="48" decoding="async" data-nimg="1"
+             class="max-[640px]:w-[250px]" style="color:transparent" src="/sifre-olusturucu.svg" />
+    </header>
+    <div class="gap-24 flex flex-col items-center justify-center">
+        <main class="w-full">
             <section class="flex items-center justify-center">
                 <div>
-                    <div class="w-[1600px] h-[430px] bg-[url(/resimler/background-white.webp)] bg-no-repeat bg-cover fs-container flex flex-col items-center justify-center text-center transition-all duration-200">
-                        <h2 class="text-4xl font-bold text-primary mb-8 max-[540px]:text-3xl">
+                    <div class="w-[1600px] h-[430px] bg-[url(/background-white.webp)] bg-no-repeat bg-cover fs-container flex flex-col items-center justify-center text-center transition-all duration-200">
+                        <h2 class="text-5xl font-bold text-primary mb-8 max-[540px]:text-4xl">
                             Rastgele Şifre Oluşturucu
                         </h2>
-                        <p class="text-[#343072] mb-16 max-[540px]:text-sm">
+                        <p class="text-lg text-[#343072] mb-16 max-[540px]:text-base">
                             Güvenli hesaplara sahip olmak için <strong>şifre oluştur</strong>.
                         </p>
                         <div class="mx-auto space-y-6">
-                            <div id="sifreolusturucuDiv" class="relative input-container @($"validate-{Model.SecurityScore}")">
-                                <input type="text"
-                                       id="generated-password"
-                                       class="p-6 block w-[47rem] font-medium text-primary rounded-full border-gray-200 validate-green focus:outline-none disabled:opacity-50 disabled:pointer-events-none max-[810px]:w-[40rem] max-[680px]:w-[35rem] max-[600px]:w-[30rem] max-[540px]:w-[25rem] max-[480px]:w-[20rem]"
+                            <div id="sifreolusturucuDiv" class="relative rounded-full transition-all duration-150 input-container shadow-[0_6px_0_0_var(--bg-primary)] validate-3 @($" validate-{Model.SecurityScore}")">
+                                <input type="text" id="generated-password" aria-label="generated-password"
+                                       class="p-6 block w-[47rem] font-medium text-primary rounded-full border-gray-200 focus:outline-none disabled:opacity-50 disabled:pointer-events-none max-[810px]:w-[40rem] max-[680px]:w-[35rem] max-[600px]:w-[30rem] max-[540px]:w-[25rem] max-[480px]:w-[20rem]"
                                        value="@ViewBag.GeneratedPassword" readonly />
-
                                 <div class="absolute inset-y-0 end-0 flex items-center z-20 pe-2 ">
                                     <button class="font-medium text-white bg-primary px-10 py-4 rounded-full cursor-pointer"
                                             aria-label="Copy Password" onclick="copyPassword()">
-                                        <span class="block max-[480px]:hidden">Kopyala</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                                                                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                                                                  stroke-linecap="round" stroke-linejoin="round"
-                                                                                                  class="hidden max-[480px]:block">
+                                        <span class="block max-[480px]:hidden">Kopyala</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                             class="hidden max-[480px]:block">
                                             <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
                                             <path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
                                             <path d="M16 4h2a2 2 0 0 1 2 2v4"></path>
@@ -64,7 +62,8 @@
                                         -
                                     </button>
                                     <input asp-for="Length" id="length" type="range" min="1" max="50" class="password-length-element"
-                                           aria-label="Password Length" name="Length" value="@Model.Length" oninput="updateLengthValue(this.value)" />
+                                           aria-label="Password Length" name="Length" value="@Model.Length"
+                                           oninput="updateLengthValue(this.value)" />
                                     <button class="px-2.5 text-2xl font-bold text-bg-primary-dark bg-bg-primary rounded-md"
                                             onclick="updateLength(1)">
                                         +
@@ -73,27 +72,27 @@
                                 <div class="gap-8 flex items-center justify-center">
                                     <div class="gap-2 flex items-center justify-center">
                                         <label class="checkbox-label">
-                                            <input asp-for="useUpper" type="checkbox"
-                                                   class="checkbox" name="useUpper" onchange="updatePassword()" />
+                                            <input asp-for="useUpper" type="checkbox" class="checkbox" name="useUpper"
+                                                   onchange="updatePassword()" checked />
                                             <span class="checkbox-custom"></span>
                                         </label><span class="text-sm font-semibold text-primary">ABC</span>
                                     </div>
                                     <div class="gap-2 flex items-center justify-center">
                                         <label class="checkbox-label">
-                                            <input asp-for="useLower" type="checkbox"
-                                                   class="checkbox" name="useLower" onchange="updatePassword()" /><span class="checkbox-custom"></span>
+                                            <input asp-for="useLower" type="checkbox" class="checkbox" name="useLower"
+                                                   onchange="updatePassword()" checked /><span class="checkbox-custom"></span>
                                         </label><span class="text-sm font-semibold text-primary">abc</span>
                                     </div>
                                     <div class="gap-2 flex items-center justify-center">
                                         <label class="checkbox-label">
-                                            <input asp-for="useNumber" type="checkbox"
-                                                   class="checkbox" name="useNumber" onchange="updatePassword()" /><span class="checkbox-custom"></span>
+                                            <input asp-for="useNumber" type="checkbox" class="checkbox" name="useNumber"
+                                                   onchange="updatePassword()" checked /><span class="checkbox-custom"></span>
                                         </label><span class="text-sm font-semibold text-primary">123</span>
                                     </div>
                                     <div class="gap-2 flex items-center justify-center">
                                         <label class="checkbox-label">
-                                            <input asp-for="useSpecial" type="checkbox"
-                                                   class="checkbox" name="useSpecial" onchange="updatePassword()" /><span class="checkbox-custom"></span>
+                                            <input asp-for="useSpecial" type="checkbox" class="checkbox" name="useSpecial"
+                                                   onchange="updatePassword()" /><span class="checkbox-custom"></span>
                                         </label><span class="text-sm font-semibold text-primary">#$&</span>
                                     </div>
                                 </div>
@@ -103,17 +102,213 @@
                 </div>
             </section>
         </main>
-        <section>
-            <h2 class="text-3xl font-bold text-text-dark mb-2 max-[540px]:text-2xl">Bir parolayı güçlü yapan nedir?</h2>
-            <div class="w-full flex items-center justify-between">
-                <div>
-                    <img alt="icon" loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
-                         style="color:transparent"/>
+        <section class="w-full">
+            <h2 class="text-4xl font-medium text-text-dark text-center mb-8 max-[540px]:text-3xl">
+                Bir parolayı güçlü yapan
+                nedir?
+            </h2>
+            <p class="text-lg text-text-muted text-center mb-16 max-[540px]:text-base">
+                Güçlü bir parola, en az 10 karakter
+                uzunluğunda olmalı, büyük ve küçük harfler, <br> rakamlar ve semboller içermeli ve her hesap için benzersiz
+                olmalıdır.
+            </p>
+            <div class="w-full gap-8 flex items-center justify-between px-[295px] max-[1024px]:px-0">
+                <div class="flex flex-col items-center group transform transition duration-300">
+                    <div class="p-3 rounded-2xl mb-4 bg-bg-card-hover group-hover:-mt-3 group-hover:scale-110 group-hover:bg-bg-primary group-hover:shadow-[0px_0px_2px_5px_rgba(0,0,0,0.03)] transition-all ease-linear duration-300">
+                        <svg width="91" height="21" viewBox="0 0 91 21" fill="none"
+                             class="!w-16 !h-16 transition-all ease-linear duration-300" xmlns="http://www.w3.org/2000/svg">
+                            <path class="group-hover:fill-primary"
+                                  d="M18.3809 3.18351L20.895 7.6516L13.2409 10.5L20.895 13.3484L18.325 17.9282L11.9559 12.9016L13.1292 21H7.98926L9.05077 12.9016L2.68171 18.0399L0 13.2926L7.59817 10.4441L0 7.70745L2.56997 3.12766L9.10664 8.15426L7.98926 0H13.1851L11.9559 8.15426L18.3809 3.18351Z"
+                                  fill="#7F8080" />
+                            <path class="group-hover:fill-primary"
+                                  d="M46.5336 3.18351L49.0477 7.6516L41.3936 10.5L49.0477 13.3484L46.4777 17.9282L40.1086 12.9016L41.2819 21H36.142L37.2035 12.9016L30.8344 18.0399L28.1527 13.2926L35.7509 10.4441L28.1527 7.70745L30.7227 3.12766L37.2593 8.15426L36.142 0H41.3378L40.1086 8.15426L46.5336 3.18351Z"
+                                  fill="#7F8080" />
+                            <path class="group-hover:fill-primary" d="M91 15.0798V21H59.8251V15.0798H91Z" fill="#7F8080" />
+                        </svg>
+                    </div>
+                    <span class="text-lg font-semibold text-center group-hover:text-text-primary group-hover:scale-110 transition-all ease-linear duration-300">Uzunluk</span>
+                    <!-- <span
+                      class="text-sm font-medium text-center group-hover:text-text-primary group-hover:scale-110 transition-all ease-linear duration-300">Parolanızın güvenli olmasını istiyorsanız, en az 10 karakter uzunluğunda olmasına dikkat etmelisiniz. Uzun parolalar, kısa olanlara göre daha güvenlidir.
+                    </span> -->
+                </div>
+                <div class="flex flex-col items-center group transform transition duration-300">
+                    <div class="p-3 rounded-2xl mb-4 bg-bg-card-hover group-hover:-mt-3 group-hover:scale-110 group-hover:bg-bg-primary group-hover:shadow-[0px_0px_2px_5px_rgba(0,0,0,0.03)] transition-all ease-linear duration-300">
+                        <svg width="82" height="38" viewBox="0 0 82 38" fill="none"
+                             class="!w-16 !h-16 transition-all ease-linear duration-300" xmlns="http://www.w3.org/2000/svg">
+                            <path class="group-hover:fill-primary"
+                                  d="M64.6185 12.397C63.1824 12.397 62.0146 13.5682 62.0146 15.0095V17.5541H67.2275V15.0095C67.2275 13.5682 66.0546 12.397 64.6185 12.397Z"
+                                  fill="#7F8080" />
+                            <path class="group-hover:fill-primary"
+                                  d="M71.8529 0H10.0615C4.53144 0 0 4.53492 0 10.065V27.8074C0 33.3462 4.53144 37.8724 10.0615 37.8724H71.8529C77.383 37.8724 81.9145 33.3462 81.9145 27.8074V10.065C81.9145 4.53492 77.383 0 71.8529 0ZM21.8903 21.6847L24.3042 24.3129L20.1231 27.4501L18.4081 24.3129C18.1554 23.865 17.7598 22.9866 17.2038 21.6847C16.5955 23.1156 16.1912 23.987 15.9908 24.3129L14.2514 27.4501L9.95348 24.3129L12.5521 21.6847C13.2841 20.9614 13.9934 20.3409 14.6941 19.832C13.9795 19.7675 13.0401 19.6351 11.8811 19.4172L8.28208 18.8316L9.95174 13.9307L13.1795 15.3982C13.5194 15.5515 14.3647 16.0343 15.7102 16.8343C15.4226 15.5324 15.2378 14.5651 15.1542 13.9307L14.6958 10.4223H19.8216L19.4068 13.9307C19.3161 14.7847 19.1174 15.752 18.8229 16.8343C19.4137 16.538 19.8041 16.3411 19.9889 16.233C20.6372 15.8722 21.1374 15.623 21.4738 15.4627L24.7033 13.9307L26.3033 18.8316L22.7321 19.5776C22.0786 19.703 21.1095 19.785 19.8216 19.832C20.6947 20.5152 21.3779 21.1287 21.8903 21.6847ZM45.5532 21.6847L47.9705 24.3129L43.7894 27.4483L42.0762 24.3129C41.8234 23.865 41.4278 22.9866 40.8736 21.6847C40.2636 23.1156 39.8627 23.987 39.6623 24.3129L37.9194 27.4483L33.6233 24.3129L36.2219 21.6847C36.9539 20.9614 37.6615 20.3409 38.3639 19.832C37.6528 19.7675 36.7099 19.6351 35.5509 19.4172L31.9501 18.8316L33.6215 13.9307L36.8511 15.3982C37.1874 15.5515 38.0362 16.0343 39.3799 16.8343C39.0854 15.5324 38.9007 14.5651 38.8222 13.9307L38.3621 10.4258H43.4896L43.0731 13.9307C42.979 14.7847 42.7838 15.752 42.4927 16.8343C43.08 16.538 43.4704 16.3411 43.6569 16.233C44.3018 15.8722 44.8037 15.623 45.1418 15.4627L48.3731 13.9307L49.9748 18.8316L46.4002 19.5776C45.7466 19.703 44.7811 19.785 43.4914 19.832C44.3576 20.5152 45.0425 21.1287 45.5532 21.6847ZM72.0673 26.1255C72.0673 27.2043 71.1837 28.0862 70.1066 28.0862H59.1353C58.0564 28.0862 57.1746 27.2043 57.1746 26.1255V19.5131C57.1746 18.4342 58.0564 17.5524 59.1353 17.5524H59.4002V15.0078C59.4002 12.1268 61.7409 9.78268 64.6183 9.78268C67.4975 9.78268 69.8399 12.1251 69.8399 15.0078V17.5524H70.1048C71.1802 17.5524 72.0656 18.4342 72.0656 19.5131L72.0673 26.1255Z"
+                                  fill="#7F8080" />
+                        </svg>
+                    </div>
+                    <span class="text-lg font-semibold text-center group-hover:text-text-primary group-hover:scale-110 transition-all ease-linear duration-300">Karmaşıklık</span>
+                    <!-- <span
+                      class="text-sm font-medium text-center group-hover:text-text-primary group-hover:scale-110 transition-all ease-linear duration-300">Güvenli bir parola, tahmin edilmesi zor ve çeşitli karakterler içermelidir. Büyük harfler, küçük harfler, rakamlar ve özel semboller gibi farklı karakter türlerini kullanarak parolanızı karmaşık hale getirebilirsiniz.
+                    </span> -->
+                </div>
+                <div class="flex flex-col items-center group transform transition duration-300">
+                    <div class="p-3 rounded-2xl mb-4 bg-bg-card-hover group-hover:-mt-3 group-hover:scale-110 group-hover:bg-bg-primary group-hover:shadow-[0px_0px_2px_5px_rgba(0,0,0,0.03)] transition-all ease-linear duration-300">
+                        <svg width="74" height="44" viewBox="0 0 74 44" fill="none"
+                             class="!w-16 !h-16 transition-all ease-linear duration-300" xmlns="http://www.w3.org/2000/svg">
+                            <path class="group-hover:fill-primary"
+                                  d="M72.5324 2.98438C72.0535 3.81127 71.2219 4.68184 69.8037 5.53682L48.8833 18.0853C50.3608 19.1852 51.3266 20.931 51.3266 22.9078V24.3088L62.7658 30.6228C63.4725 31.0129 63.7284 31.9069 63.3383 32.6136C63.0684 33.1004 62.5676 33.3703 62.0528 33.3703C61.814 33.3703 61.5675 33.3126 61.3398 33.1909L51.3266 27.6601V33.3282C51.3266 36.6451 48.629 39.3458 45.3059 39.3458H28.0223C24.6991 39.3458 22 36.6467 22 33.3282V27.6569L11.9806 33.1909C11.7559 33.3126 11.5078 33.3703 11.2738 33.3703C10.7543 33.3703 10.2566 33.0988 9.98823 32.6136C9.59974 31.9069 9.85093 31.0129 10.5624 30.6228L22 24.3073V22.9078C22 20.9295 22.9642 19.1837 24.4432 18.0868L3.52131 5.53682C2.09843 4.6834 1.2653 3.81283 0.789447 2.98438C0.302674 3.83935 0 4.81602 0 5.86757V38.1288C0 41.3553 2.63981 43.9998 5.86469 43.9998H67.4634C70.6852 43.9998 73.3281 41.3568 73.3281 38.1288V5.86757C73.3219 4.81602 73.0192 3.83935 72.5324 2.98438Z"
+                                  fill="#7F8080" />
+                            <path class="group-hover:fill-primary"
+                                  d="M5.02616 3.02049L25.5315 15.3225C25.7936 9.39536 30.6816 4.65088 36.6649 4.65088C42.6482 4.65088 47.5346 9.3938 47.7999 15.3178L68.2959 3.02049C71.0667 1.35891 70.6814 0 67.4612 0H5.8593C2.63442 0 2.2553 1.35891 5.02616 3.02049Z"
+                                  fill="#7F8080" />
+                            <path class="group-hover:fill-primary"
+                                  d="M36.6626 7.58423C32.1241 7.58423 28.4374 11.2772 28.4374 15.8141V19.8191H28.0224C26.3187 19.8191 24.9348 21.2092 24.9348 22.9082V33.3318C24.9348 35.0261 26.3202 36.4178 28.0224 36.4178H45.306C47.0097 36.4178 48.3936 35.0277 48.3936 33.3318V22.9082C48.3936 21.2092 47.0081 19.8191 45.306 19.8191H44.8879V15.8141C44.8879 11.2756 41.2012 7.58423 36.6626 7.58423ZM40.7737 19.8207H32.5516V15.8157C32.5516 13.5441 34.3988 11.6984 36.6626 11.6984C38.9264 11.6984 40.7737 13.5441 40.7737 15.8157V19.8207Z"
+                                  fill="#7F8080" />
+                        </svg>
+
+                    </div>
+                    <span class="text-lg font-semibold text-center group-hover:text-text-primary group-hover:scale-110 transition-all ease-linear duration-300">Benzersizlik</span>
+                    <!-- <span
+                      class="text-sm font-medium text-center group-hover:text-text-primary group-hover:scale-110 transition-all ease-linear duration-300">Her hesabınız için farklı ve güçlü bir parola kullanmak, olası bir güvenlik ihlalinde diğer hesaplarınızın güvenli kalmasını sağlar. Aynı parolayı birden fazla hesapta kullanmamaya özen gösterin.
+                    </span> -->
+                </div>
+            </div>
+        </section>
+        <section class="w-full mt-16">
+            <h2 class="text-4xl font-medium text-text-dark text-center mb-8 max-[540px]:text-3xl">
+                Lorem ipsum dolor sit amet
+                lorem ipsum?
+            </h2>
+            <p class="text-lg text-text-muted text-center mb-16 max-[540px]:text-base">
+                Officiis aperiam facere eum sit maxime ab officia voluptatum quaerat.
+            </p>
+            <div class="gap-20 flex flex-col items-center justify-center px-[100px] max-[630px]:px-[20px]">
+                <div class="flex flex-col lg:flex-row items-center lg:space-x-10 space-y-4 lg:space-y-0">
+                    <div class="gap-4 flex flex-col text-start lg:w-1/2 w-full">
+                        <h3 class="text-3xl mb-2">Lorem ipsum dolor sit amet?</h3>
+                        <p class="text-text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <p class="text-text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <img src="/resimler/1.webp" class="overflow-hidden object-cover" alt="features-image" />
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center lg:space-x-10 space-y-4 lg:space-y-0">
+                    <div class="lg:w-1/2 w-full">
+                        <img src="/resimler/2.webp" class="overflow-hidden object-cover" alt="features-image" />
+                    </div>
+                    <div class="gap-4 flex flex-col text-start lg:w-1/2 w-full">
+                        <h3 class="text-3xl mb-2">Lorem ipsum dolor sit amet?</h3>
+                        <p class="text-text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <p class="text-text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center lg:space-x-10 space-y-4 lg:space-y-0">
+                    <div class="gap-4 flex flex-col text-start lg:w-1/2 w-full">
+                        <h3 class="text-3xl mb-2">Lorem ipsum dolor sit amet?</h3>
+                        <p class="text-text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <p class="text-text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <img src="/resimler/3.webp" class="overflow-hidden object-cover" alt="features-image" />
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center lg:space-x-10 space-y-4 lg:space-y-0">
+                    <div class="lg:w-1/2 w-full">
+                        <img src="/resimler/4.webp" class="overflow-hidden object-cover" alt="features-image" />
+                    </div>
+                    <div class="gap-4 flex flex-col text-start lg:w-1/2 w-full">
+                        <h3 class="text-3xl mb-2">Lorem ipsum dolor sit amet?</h3>
+                        <p class="text-text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <p class="text-text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center lg:space-x-10 space-y-4 lg:space-y-0">
+                    <div class="gap-4 flex flex-col text-start lg:w-1/2 w-full">
+                        <h3 class="text-3xl mb-2">Lorem ipsum dolor sit amet?</h3>
+                        <p class="text-text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <p class="text-text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <img src="/resimler/5.webp" class="overflow-hidden object-cover" alt="features-image" />
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center lg:space-x-10 space-y-4 lg:space-y-0">
+                    <div class="lg:w-1/2 w-full">
+                        <img src="/resimler/6.webp" class="overflow-hidden object-cover" alt="features-image" />
+                    </div>
+                    <div class="gap-4 flex flex-col text-start lg:w-1/2 w-full">
+                        <h3 class="text-3xl mb-2">Lorem ipsum dolor sit amet?</h3>
+                        <p class="text-text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <p class="text-text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full mb-16">
+            <h2 class="text-4xl font-medium text-text-dark text-center mb-8 max-[540px]:text-3xl">Sıkça Sorulan Sorular</h2>
+            <div class="gap-4 flex flex-col items-center justify-center px-[100px] max-[630px]:px-[20px]">
+                <div class="w-full border border-bg-primary rounded-md accordion-item">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header">
+                        <h3 class="text-xl font-semibold">Lorem Ipsum dolar sit.</h3>
+                        <img src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quo doloremque deleniti quae eveniet earum magni mollitia culpa, debitis impedit quia quam quasi, error aperiam quisquam, esse et optio iusto.Beatae eaque ipsum maiores architecto, sint deleniti. </p>
+                    </div>
+                </div>
+                <div class="w-full border border-bg-primary rounded-md accordion-item">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header">
+                        <h3 class="text-xl font-semibold">Lorem Ipsum dolar sit.</h3>
+                        <img src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, aperiam minima. Maiores laborum in enim non reprehenderit quod consectetur beatae voluptates magni, quia reiciendis fugit inventore aliquam, cumque a expedita!</p>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
+    <footer class="w-full fs-container p-3 bg-bg-primary">
+        <div class="flex items-center justify-center">
+            <p class="text-text-gray text-sm text-center">©<span class="year"></span> sifre-olusturucu.com Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
     <script>
+        // Generate Password
         document.addEventListener("DOMContentLoaded", function () {
             const checkboxes = document.querySelectorAll('input[type="checkbox"]');
             const lengthInput = document.getElementById('length');
@@ -178,6 +373,44 @@
         function updateLengthValue(value) {
             updatePassword();
         }
+
+        // Accordion
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const icon = header.querySelector('.accordion-icon');
+                const content = header.nextElementSibling;
+
+                icon.classList.toggle('accordion-active');
+                header.classList.toggle('accordion-active');
+
+                if (content.classList.contains('accordion-active')) {
+
+                    content.classList.remove('accordion-active');
+                    content.style.maxHeight = '0';
+                    content.style.opacity = '0';
+                    content.style.padding = '0 2rem';
+                } else {
+
+                    content.classList.add('accordion-active');
+
+                    content.style.padding = '0 2rem';
+                    content.style.maxHeight = content.scrollHeight + '0' + 'px';
+                    content.style.opacity = '1';
+
+                    setTimeout(() => {
+                        content.style.padding = '2rem';
+                    }, 100);
+                }
+            });
+        });
+
+
+
+
+        // Generate Current Year
+        const currentYear = new Date().getFullYear();
+        document.querySelector('.year').innerHTML = currentYear;
+
     </script>
 </body>
 

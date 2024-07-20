@@ -11,10 +11,6 @@
       "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|f:\\masa\u00FCst\u00FC\\ki\u015Fiselyaz\u0131l\u0131m\\yazilim\\projeler\\sifreolusturucu\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|f:\\masa\u00FCst\u00FC\\ki\u015Fiselyaz\u0131l\u0131m\\yazilim\\projeler\\sifreolusturucu\\wwwroot\\css\\tailwind.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:wwwroot\\css\\tailwind.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -23,20 +19,12 @@
       "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|f:\\masa\u00FCst\u00FC\\ki\u015Fiselyaz\u0131l\u0131m\\yazilim\\projeler\\sifreolusturucu\\postcss.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:postcss.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|f:\\masa\u00FCst\u00FC\\ki\u015Fiselyaz\u0131l\u0131m\\yazilim\\projeler\\sifreolusturucu\\models\\password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:models\\password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|f:\\masa\u00FCst\u00FC\\ki\u015Fiselyaz\u0131l\u0131m\\yazilim\\projeler\\sifreolusturucu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|f:\\masa\u00FCst\u00FC\\ki\u015Fiselyaz\u0131l\u0131m\\yazilim\\projeler\\sifreolusturucu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,21 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "postcss.config.js",
-              "DocumentMoniker": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\postcss.config.js",
-              "RelativeDocumentMoniker": "postcss.config.js",
-              "ToolTip": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\postcss.config.js",
-              "RelativeToolTip": "postcss.config.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-19T09:08:07.547Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -69,7 +44,7 @@
               "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
               "ToolTip": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\css\\style.css",
               "RelativeToolTip": "wwwroot\\css\\style.css",
-              "ViewState": "AQIAABcBAAAAAAAAAAAhwCgBAAACAAAA",
+              "ViewState": "AQIAAKcDAAAAAAAAAAAhwLgDAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-07-19T09:07:59.792Z",
               "EditorCaption": ""
@@ -77,19 +52,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "tailwind.config.js",
-              "DocumentMoniker": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\tailwind.config.js",
-              "RelativeDocumentMoniker": "tailwind.config.js",
-              "ToolTip": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\tailwind.config.js",
-              "RelativeToolTip": "tailwind.config.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-19T09:06:25.531Z",
+              "Title": "tailwind.css",
+              "DocumentMoniker": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\css\\tailwind.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\tailwind.css",
+              "ToolTip": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\css\\tailwind.css",
+              "RelativeToolTip": "wwwroot\\css\\tailwind.css",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAiwJIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-19T08:37:58.283Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "package.json",
               "DocumentMoniker": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\package.json",
               "RelativeDocumentMoniker": "package.json",
@@ -97,21 +72,7 @@
               "RelativeToolTip": "package.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-19T09:01:56.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "tailwind.css",
-              "DocumentMoniker": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\css\\tailwind.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\tailwind.css",
-              "ToolTip": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\css\\tailwind.css",
-              "RelativeToolTip": "wwwroot\\css\\tailwind.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-19T08:37:58.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-19T09:01:56.212Z"
             },
             {
               "$type": "Document",
@@ -121,26 +82,14 @@
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAJUAAAAAAAAAAAAAAKMAAAANAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABcAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-18T21:23:15.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T20:32:16.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Password.cs",
               "DocumentMoniker": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\Models\\Password.cs",
               "RelativeDocumentMoniker": "Models\\Password.cs",
@@ -152,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "HomeController.cs",
               "DocumentMoniker": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
