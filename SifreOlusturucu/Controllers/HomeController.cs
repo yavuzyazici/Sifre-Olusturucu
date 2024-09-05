@@ -23,6 +23,8 @@ namespace SifreOlusturucu.Controllers
             return View(password);
         }
 
+        #region GeneratePasswordPost
+        /*
         [HttpPost]
         public JsonResult GeneratePassword(int length, bool useUpper, bool useLower, bool useNumber, bool useSpecial)
         {
@@ -37,6 +39,9 @@ namespace SifreOlusturucu.Controllers
 
             return Json(result);
         }
+        */
+        #endregion
+
         public static class PasswordGenerate
         {
             private static string Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "drdFVrld0YU5gWMx47ZNJJISUhpHvenel8RZbhyb6qY=",
+  "Hash": "vNk3jAXX8XmiXbuOl7MbtNDqKH3eH/IrFwwWSk+QDjk=",
   "Source": "SifreOlusturucu",
   "BasePath": "_content/SifreOlusturucu",
   "Mode": "Default",
@@ -587,25 +587,6 @@
       "OriginalItemSpec": "wwwroot\\resimler\\1.webp"
     },
     {
-      "Identity": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\2 - Kopya.webp",
-      "SourceId": "SifreOlusturucu",
-      "SourceType": "Discovered",
-      "ContentRoot": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\",
-      "BasePath": "_content/SifreOlusturucu",
-      "RelativePath": "resimler/2 - Kopya.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resimler\\2 - Kopya.webp"
-    },
-    {
       "Identity": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\2.webp",
       "SourceId": "SifreOlusturucu",
       "SourceType": "Discovered",
@@ -623,25 +604,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\resimler\\2.webp"
-    },
-    {
-      "Identity": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\3 - Kopya.webp",
-      "SourceId": "SifreOlusturucu",
-      "SourceType": "Discovered",
-      "ContentRoot": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\",
-      "BasePath": "_content/SifreOlusturucu",
-      "RelativePath": "resimler/3 - Kopya.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resimler\\3 - Kopya.webp"
     },
     {
       "Identity": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\3.webp",
@@ -853,6 +815,25 @@
       "OriginalItemSpec": "wwwroot\\resimler\\icon-3.svg"
     },
     {
+      "Identity": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\karmasik-sifre-olustur.webp",
+      "SourceId": "SifreOlusturucu",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\",
+      "BasePath": "_content/SifreOlusturucu",
+      "RelativePath": "resimler/karmasik-sifre-olustur.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resimler\\karmasik-sifre-olustur.webp"
+    },
+    {
       "Identity": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\sifre-olusturucu-ile-guvenli-gezin.webp",
       "SourceId": "SifreOlusturucu",
       "SourceType": "Discovered",
@@ -908,6 +889,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\resimler\\sifre-olustururken-karmasikliga-dikkat-et.webp"
+    },
+    {
+      "Identity": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\sifreni-uzun-tut.webp",
+      "SourceId": "SifreOlusturucu",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\",
+      "BasePath": "_content/SifreOlusturucu",
+      "RelativePath": "resimler/sifreni-uzun-tut.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resimler\\sifreni-uzun-tut.webp"
     },
     {
       "Identity": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\robots.txt",

@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\NewFolder1\**" />
+    <Compile Remove="wwwroot\_next\**" />
+    <Content Remove="wwwroot\NewFolder1\**" />
+    <Content Remove="wwwroot\_next\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder1\**" />
+    <EmbeddedResource Remove="wwwroot\_next\**" />
+    <None Remove="wwwroot\NewFolder1\**" />
+    <None Remove="wwwroot\_next\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="wwwroot\icon-1.png" />
     <Content Remove="wwwroot\icon-2.png" />
     <Content Remove="wwwroot\index.txt" />
@@ -19,45 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\js\" />
-    <Folder Include="wwwroot\NewFolder1\" />
-    <Folder Include="wwwroot\NewFolder\" />
-    <Folder Include="wwwroot\_next\static\css\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\icon-1.png" />
-    <None Include="wwwroot\icon-2.png" />
-    <None Include="wwwroot\index.txt" />
-    <None Include="wwwroot\light-hero-banner.webp" />
     <None Include="wwwroot\sifre-olusturucu.svg" />
-    <None Include="wwwroot\_next\static\chunks\173-4f078887a7bfcdfc.js" />
-    <None Include="wwwroot\_next\static\chunks\23-c28f2a9ad4258962.js" />
-    <None Include="wwwroot\_next\static\chunks\app\layout-7026382af0e685ef.js" />
-    <None Include="wwwroot\_next\static\chunks\app\page-591e446ac8571fbe.js" />
-    <None Include="wwwroot\_next\static\chunks\app\_not-found\page-846bc14f8cdb3714.js" />
-    <None Include="wwwroot\_next\static\chunks\fd9d1056-be48aeae6e94b8d1.js" />
-    <None Include="wwwroot\_next\static\chunks\framework-f66176bb897dc684.js" />
-    <None Include="wwwroot\_next\static\chunks\main-app-8ede8cfd832ec087.js" />
-    <None Include="wwwroot\_next\static\chunks\main-c8553ba68b419844.js" />
-    <None Include="wwwroot\_next\static\chunks\pages\_app-6a626577ffa902a4.js" />
-    <None Include="wwwroot\_next\static\chunks\pages\_error-1be831200e60c5c0.js" />
-    <None Include="wwwroot\_next\static\chunks\polyfills-78c92fac7aa8fdd8.js" />
-    <None Include="wwwroot\_next\static\chunks\webpack-cd8ec4428d547991.js" />
-    <None Include="wwwroot\_next\static\kqO6r-Tkm9cUk3NzLACFy\_buildManifest.js" />
-    <None Include="wwwroot\_next\static\kqO6r-Tkm9cUk3NzLACFy\_ssgManifest.js" />
-    <None Include="wwwroot\_next\static\media\0484562807a97172-s.p.woff2" />
-    <None Include="wwwroot\_next\static\media\0a03a6d30c07af2e-s.woff2" />
-    <None Include="wwwroot\_next\static\media\30cd8f99d32fa6e8-s.woff2" />
-    <None Include="wwwroot\_next\static\media\46c21389e888bf13-s.woff2" />
-    <None Include="wwwroot\_next\static\media\4c285fdca692ea22-s.p.woff2" />
-    <None Include="wwwroot\_next\static\media\7db6c35d839a711c-s.p.woff2" />
-    <None Include="wwwroot\_next\static\media\8888a3826f4a3af4-s.p.woff2" />
-    <None Include="wwwroot\_next\static\media\8d346445d24062b5-s.woff2" />
-    <None Include="wwwroot\_next\static\media\b957ea75a84b6ea7-s.p.woff2" />
-    <None Include="wwwroot\_next\static\media\dfa2ccbeca9e77a8-s.woff2" />
-    <None Include="wwwroot\_next\static\media\eafabf029ad39a43-s.p.woff2" />
-    <None Include="wwwroot\_next\static\media\f5767adec246cdc1-s.woff2" />
   </ItemGroup>
 
 </Project>

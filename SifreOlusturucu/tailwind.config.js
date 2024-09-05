@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-        './Views/Home/Index.cshtml',
+        './Views/Home/Index.cshtml'
     ],
     theme: {
         container: {

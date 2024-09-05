@@ -121,16 +121,8 @@
       "PackagePath": "staticwebassets\\resimler\\1.webp"
     },
     {
-      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\2 - Kopya.webp",
-      "PackagePath": "staticwebassets\\resimler\\2 - Kopya.webp"
-    },
-    {
       "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\2.webp",
       "PackagePath": "staticwebassets\\resimler\\2.webp"
-    },
-    {
-      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\3 - Kopya.webp",
-      "PackagePath": "staticwebassets\\resimler\\3 - Kopya.webp"
     },
     {
       "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\3.webp",
@@ -177,6 +169,10 @@
       "PackagePath": "staticwebassets\\resimler\\icon-3.svg"
     },
     {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\karmasik-sifre-olustur.webp",
+      "PackagePath": "staticwebassets\\resimler\\karmasik-sifre-olustur.webp"
+    },
+    {
       "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\sifre-olusturucu-ile-guvenli-gezin.webp",
       "PackagePath": "staticwebassets\\resimler\\sifre-olusturucu-ile-guvenli-gezin.webp"
     },
@@ -187,6 +183,10 @@
     {
       "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\sifre-olustururken-karmasikliga-dikkat-et.webp",
       "PackagePath": "staticwebassets\\resimler\\sifre-olustururken-karmasikliga-dikkat-et.webp"
+    },
+    {
+      "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\resimler\\sifreni-uzun-tut.webp",
+      "PackagePath": "staticwebassets\\resimler\\sifreni-uzun-tut.webp"
     },
     {
       "Id": "F:\\Masaüstü\\KişiselYazılım\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\robots.txt",

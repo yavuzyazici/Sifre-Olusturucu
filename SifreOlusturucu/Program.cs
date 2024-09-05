@@ -5,23 +5,35 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
+//app.UseStatusCodePages();
+app.UseStatusCodePagesWithReExecute("/Error/Error404", "?code={0}");
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+
+    endpoints.MapControllerRoute(
+        name: "sitemap",
+        pattern: "sitemap.xml",
+        defaults: new { controller = "Sitemap", action = "Index" });
+
+    endpoints.MapControllerRoute(
+    name: "EDevletSifreOlusturucu",
+    pattern: "blog/e-devlet-sifre-olusturucu",
+    defaults: new { controller = "Blog", action = "EDevletSifreOlusturucu" });
+
+    endpoints.MapControllerRoute(
+        name: "GuclutSifreNasilOlusturulur",
+        pattern: "blog/guclu-sifre-nasil-olusturulur",
+        defaults: new { controller = "Blog", action = "GuclutSifreNasilOlusturulur" });
+});
 
 app.Run();

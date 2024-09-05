@@ -1,51 +1,249 @@
-﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@model SifreOlusturucu.Models.Password
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
 
 <head>
-    <title>Rastgele Parola Oluşturucu</title>
-    <meta name="description"
-          content="Rastgele Şifre Oluşturucu, çevrimiçi hesaplarınızı güvende tutmak için güçlü ve güvenli şifreler oluşturun." />
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="./css/style.css" rel="stylesheet">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet">
-</head>
 
+    <title>Şifre Oluşturucu, Güvenli ve Güvenilir Parola Oluştur</title>
+    <meta name="description"
+          content="Şifre Oluşturucu uygulamamızı kullanarak en güçlü şifre oluşturun! Ücretsiz şifre oluşturucumuzla güvenli ve karmaşık şifre oluşturun." />
+    <meta />
+
+    <meta name="keywords" content="şifre oluşturucu, sifre oluşturucu, sifre olusturucu, sifre olusturucu, sifre olustur, güçlü şifre oluşturucu, güvenli şifre oluşturucu, parola oluşturucu">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Şifre Oluşturucu, Güvenli ve Güvenilir Parola Oluştur">
+    <meta property="og:description" content="Şifre Oluşturucu uygulamamızı kullanarak en güçlü şifre oluşturun! Ücretsiz şifre oluşturucumuzla güvenli ve karmaşık şifre oluşturun.">
+    <meta property="og:image" content="https://sifreolusturucu.com/resimler/sifre-olusturucu-og.png">
+    <meta property="og:url" content="https://sifreolusturucu.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Şifre Oluşturucu, Güvenli ve Güvenilir Parola Oluştur">
+    <meta name="twitter:description" content="Şifre Oluşturucu uygulamamızı kullanarak en güçlü şifre oluşturun! Ücretsiz şifre oluşturucumuzla güvenli ve karmaşık şifre oluşturun.">
+    <meta name="twitter:image" content="https://sifreolusturucu.com/resimler/sifre-olusturucu-og.png">
+
+    <!-- Other Meta Tags -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="512x512">
+    <link rel="apple-touch-icon" href="/favicon.png" sizes="512x512" />
+    <link href="./css/Fonts/poppins.css" rel="preload">
+    <meta name="application-name" content="Şifre Oluşturucu" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Yavuz Selim Yazıcı" />
+    <meta name="theme-color" content="#f5f5f5" />
+
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "SoftwareApplication",
+          "name": "Şifre Oluşturucu",
+          "operatingSystem": "All",
+          "applicationCategory": "Utility",
+          "offers": {
+            "@@type": "Offer",
+            "price": "0.00",
+            "priceCurrency": "USD"
+          }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "WebPage",
+          "name": "Şifre Oluşturucu",
+          "description": "Rastgele Şifre Oluşturucu, çevrimiçi hesaplarınızı güvende tutmak için güçlü ve güvenli şifreler oluşturun.",
+          "publisher": {
+            "@@type": "Organization",
+            "name": "Şifre Oluşturucu"
+          }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "Organization",
+          "name": "Şifre Oluşturucu",
+          "url": "https://sifreolusturucu.com",
+          "logo": "https://sifreolusturucu.com/sifre-olusturucu.svg"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@@context": "https://schema.org",
+            "@@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@@type": "Question",
+                    "name": "8 Karakterli Şifre Nasıl Oluşturulur?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "8 karakterli bir şifre oluşturmak için, büyük ve küçük harfler, rakamlar ve semboller kullanarak rastgele bir kombinasyon oluşturabilirsiniz. Örnek: 'A1b@C2d#'"
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "6 Karakterli Şifre Nasıl Oluşturulur?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "6 karakterli bir şifre oluşturmak için, büyük ve küçük harfler ile rakamları kullanarak karmaşık bir kombinasyon oluşturabilirsiniz. Örnek: 'A1b2C3'"
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "En İyi Şifre Nasıl Oluşturulur?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "En iyi şifreler uzun, karmaşık ve benzersizdir. Büyük ve küçük harfler, rakamlar ve semboller içermelidir. Ayrıca, her hesap için farklı şifreler kullanmanız önerilir. Şifre Oluşturucumuzu kullanarak hemen şimdi üretime başlayabilirsiniz."
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Dünyanın En Zor Şifresi Nedir?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "Dünyanın en zor şifresi, uzun, rastgele ve tahmin edilmesi imkansız bir kombinasyon olmalıdır. Örneğin, 16 karakterden oluşan ve büyük/küçük harfler, rakamlar ve semboller içeren bir şifre çok güçlü kabul edilir. Örnek: 'G4t$!k1p&L9m^7sW'"
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Şifre Nasıl Hazırlanır?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "Şifre hazırlarken, büyük ve küçük harfler, rakamlar ve semboller kullanarak karmaşık bir kombinasyon oluşturun. Şifrenizin tahmin edilmesi zor ve en az 8-10 karakter uzunluğunda olması önemlidir."
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Güvenli Bir Şifre Nasıl Oluşturulur?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "Güvenli bir şifre oluşturmak için, en az 10 karakter uzunluğunda, büyük ve küçük harfler, rakamlar ve semboller içeren rastgele bir kombinasyon oluşturun. Şifrenizi sık sık değiştirin ve her hesap için benzersiz şifreler kullanın."
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Şifre Oluşturucumuzu Kullanmak Güvenli mi?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "Evet, şifre oluşturucumuzu kullanmak tamamen güvenlidir. Oluşturulan şifreler yalnızca sizin tarafınızdan görülebilir ve güvenliğiniz için kaydedilmez."
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Neden Bir Şifre Oluşturucu Kullanmalıyım?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "Bir şifre oluşturucu, tahmin edilmesi zor ve güvenli şifreler oluşturmanıza yardımcı olur. Bu, çevrimiçi hesaplarınızın güvenliğini artırır ve veri ihlallerine karşı korunmanızı sağlar."
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Her Hesabım İçin Özgün Birer Şifre Kullanmam Gerekiyor mu?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "Evet, her hesabınız için benzersiz şifreler kullanmanız önemlidir. Bu, bir hesabınızın güvenliği ihlal edilse bile diğer hesaplarınızın güvende kalmasını sağlar."
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "En Kötü 10 Şifre Hangileridir?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "En kötü şifreler genellikle tahmin edilmesi kolay olanlardır. Örnekler: '123456', 'password', '12345678', 'qwerty', 'abc123', '111111', 'letmein', 'monkey', '1234', 'passw0rd'."
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "En İyi Şifre Oluşturma Aracı Hangisidir?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "En iyi şifre oluşturma aracı, güvenli ve rastgele şifreler oluşturabilen bir araçtır. Şifre oluşturucumuz, bu gereksinimleri karşılamakta ve kullanıcı dostu bir deneyim sunmaktadır."
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Güçlü Bir Şifre İçin Gereklilikler Nelerdir?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "Güçlü bir şifre, en az 10 karakter uzunluğunda olmalı, büyük ve küçük harfler, rakamlar ve semboller içermelidir. Şifreler ayrıca her hesap için benzersiz olmalıdır."
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Nasıl Rastgele Oluşturulmuş Bir Şifre Elde Edebilirim?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "Şifre oluşturucumuz, rastgele karakterler kullanarak güvenli şifreler oluşturur. Tek yapmanız gereken, istediğiniz şifre uzunluğunu ve karakter türlerini seçmek."
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Şifre Oluşturucular Ele Geçirilebilir mi?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "Güvenli şifre oluşturucular, çevrimiçi olarak şifrelerinizi kaydetmez ve yalnızca sizin tarafınızdan görülebilir. Bu, ele geçirilme riskini minimize eder."
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Şifreleri Depolamanın Güvenli Bir Yolu Var mı?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "Evet, şifre yöneticileri, şifrelerinizi güvenli bir şekilde saklamak için mükemmel bir yoldur. Bu araçlar, tüm şifrelerinizi şifrelenmiş bir biçimde saklar ve yalnızca ana şifrenizle erişilebilir kılar."
+                    }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Bir Şifreyi Güvenli Yapan Nedir?",
+                    "acceptedAnswer": {
+                        "@@type": "Answer",
+                        "text": "Güvenli bir şifre, uzun, karmaşık ve tahmin edilmesi zor olmalıdır. Büyük ve küçük harfler, rakamlar ve semboller içermeli ve her hesap için benzersiz olmalıdır."
+                    }
+                }
+            ]
+        }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R7H1YBH557"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-R7H1YBH557');
+    </script>
+</head>
 <body class="container overflow-x-hidden transition-all ease-linear duration-200 __className_8c73d4">
     <header class="w-full h-20 gap-10 flex items-center justify-center bg-[#F5F5F5] fs-container">
-        <img alt="Şifre Oluşturucu" loading="lazy" width="300" height="48" decoding="async" data-nimg="1"
-             class="max-[640px]:w-[250px]" style="color:transparent" src="/sifre-olusturucu.svg" />
+        <a href="https://sifreolusturucu.com"><img alt="Şifre Oluşturucu" title="Şifre Oluşturucu" class="max-[640px]:w-[250px]" style="color:transparent" src="/sifre-olusturucu.svg" loading="lazy" width="300" height="48" decoding="async" data-nimg="1" /></a>
     </header>
     <div class="gap-24 flex flex-col items-center justify-center">
         <main class="w-full">
             <section class="flex items-center justify-center">
                 <div>
                     <div class="w-[1600px] h-[430px] bg-[url(/background-white.webp)] bg-no-repeat bg-cover fs-container flex flex-col items-center justify-center text-center transition-all duration-200">
-                        <h2 class="text-5xl font-bold text-primary mb-8 max-[540px]:text-4xl">
-                            Rastgele Şifre Oluşturucu
-                        </h2>
+                        <h1 class="text-5xl font-bold text-primary mb-8 max-[540px]:text-4xl" style="display:inline-block">Şifre Oluşturucu</h1>
                         <p class="text-lg text-[#343072] mb-16 max-[540px]:text-base">
-                            Güvenli hesaplara sahip olmak için <strong>şifre oluştur</strong>.
+                            <strong>Şifre Oluşturucu</strong> ile Hızlı ve Güvenli Şifreler Oluşturun. Hemen şifre oluşturmaya başla
                         </p>
                         <div class="mx-auto space-y-6">
-                            <div id="sifreolusturucuDiv" class="relative rounded-full transition-all duration-150 input-container shadow-[0_6px_0_0_var(--bg-primary)] validate-3 @($" validate-{Model.SecurityScore}")">
-                                <input type="text" id="generated-password" aria-label="generated-password"
+                            <div id="sifreolusturucuDiv" class="relative rounded-full shadow-container">
+                                <div class="default-shadow-overlay"></div>
+                                <div class="shadow-overlay"></div>
+                                <input type="text"
+                                       id="generated-password"
+                                       aria-label="generated-password"
                                        class="p-6 block w-[47rem] font-medium text-primary rounded-full border-gray-200 focus:outline-none disabled:opacity-50 disabled:pointer-events-none max-[810px]:w-[40rem] max-[680px]:w-[35rem] max-[600px]:w-[30rem] max-[540px]:w-[25rem] max-[480px]:w-[20rem]"
-                                       value="@ViewBag.GeneratedPassword" readonly />
-                                <div class="absolute inset-y-0 end-0 flex items-center z-20 pe-2 ">
-                                    <button class="font-medium text-white bg-primary px-10 py-4 rounded-full cursor-pointer"
-                                            aria-label="Copy Password" onclick="copyPassword()">
+                                       value="@ViewBag.GeneratedPassword"
+                                       readonly />
+                                <div class="absolute inset-y-0 end-0 flex items-center z-20 pe-2">
+                                    <button id="copy-button" class="font-medium text-white bg-primary px-10 py-4 rounded-full cursor-pointer" aria-label="Copy Password">
                                         <span class="block max-[480px]:hidden">Kopyala</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                             class="hidden max-[480px]:block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden max-[480px]:block">
                                             <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
                                             <path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
                                             <path d="M16 4h2a2 2 0 0 1 2 2v4"></path>
@@ -57,43 +255,59 @@
                             </div>
                             <div class="gap-6 flex flex-col items-center justify-center">
                                 <div class="max-w-[23rem] w-full gap-4 flex items-center justify-center">
-                                    <button class="px-2.5 text-2xl font-bold text-bg-primary-dark bg-bg-primary rounded-md"
-                                            onclick="updateLength(-1)">
+                                    <button class="px-2.5 text-2xl font-bold text-bg-primary-dark bg-bg-primary rounded-md" onclick="updateLength(-1)">
                                         -
                                     </button>
-                                    <input asp-for="Length" id="length" type="range" min="1" max="50" class="password-length-element"
-                                           aria-label="Password Length" name="Length" value="@Model.Length"
-                                           oninput="updateLengthValue(this.value)" />
-                                    <button class="px-2.5 text-2xl font-bold text-bg-primary-dark bg-bg-primary rounded-md"
-                                            onclick="updateLength(1)">
+                                    <input asp-for="Length" id="length" type="range" min="1" max="50" class="password-length-element" aria-label="Password Length" name="Length" value="@Model.Length" />
+                                    <button class="px-2.5 text-2xl font-bold text-bg-primary-dark bg-bg-primary rounded-md" onclick="updateLength(1)">
                                         +
                                     </button>
                                 </div>
                                 <div class="gap-8 flex items-center justify-center">
                                     <div class="gap-2 flex items-center justify-center">
-                                        <label class="checkbox-label">
-                                            <input asp-for="useUpper" type="checkbox" class="checkbox" name="useUpper"
-                                                   onchange="updatePassword()" checked />
+                                        <label class="gap-2 flex items-center justify-center checkbox-label">
+                                            <input type="checkbox" class="checkbox" name="useUpper" onchange="updatePassword()" checked />
                                             <span class="checkbox-custom"></span>
-                                        </label><span class="text-sm font-semibold text-primary">ABC</span>
+                                            <span class="text-sm font-semibold text-primary">ABC</span>
+                                        </label>
                                     </div>
                                     <div class="gap-2 flex items-center justify-center">
-                                        <label class="checkbox-label">
-                                            <input asp-for="useLower" type="checkbox" class="checkbox" name="useLower"
-                                                   onchange="updatePassword()" checked /><span class="checkbox-custom"></span>
-                                        </label><span class="text-sm font-semibold text-primary">abc</span>
+                                        <label class="gap-2 flex items-center justify-center checkbox-label">
+                                            <input type="checkbox" class="checkbox" name="useLower" onchange="updatePassword()" checked />
+                                            <span class="checkbox-custom"></span>
+                                            <span class="text-sm font-semibold text-primary">abc</span>
+                                        </label>
                                     </div>
                                     <div class="gap-2 flex items-center justify-center">
-                                        <label class="checkbox-label">
-                                            <input asp-for="useNumber" type="checkbox" class="checkbox" name="useNumber"
-                                                   onchange="updatePassword()" checked /><span class="checkbox-custom"></span>
-                                        </label><span class="text-sm font-semibold text-primary">123</span>
+                                        <label class="gap-2 flex items-center justify-center checkbox-label">
+                                            <input type="checkbox" class="checkbox" name="useNumber" onchange="updatePassword()" checked />
+                                            <span class="checkbox-custom"></span>
+                                            <span class="text-sm font-semibold text-primary">123</span>
+                                        </label>
                                     </div>
                                     <div class="gap-2 flex items-center justify-center">
-                                        <label class="checkbox-label">
-                                            <input asp-for="useSpecial" type="checkbox" class="checkbox" name="useSpecial"
-                                                   onchange="updatePassword()" /><span class="checkbox-custom"></span>
-                                        </label><span class="text-sm font-semibold text-primary">#$&</span>
+                                        <label class="gap-2 flex items-center justify-center checkbox-label">
+                                            <input type="checkbox" class="checkbox" name="useSpecial" onchange="updatePassword()" checked />
+                                            <span class="checkbox-custom"></span>
+                                            <span class="text-sm font-semibold text-primary">#$&</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copyModal hidden fixed inset-0 items-center justify-center bg-[#d4d4d8] bg-opacity-50 z-50">
+                            <div class="w-full h-full flex items-center justify-center">
+                                <div class="relative flex items-center justify-center bg-white p-10 w-[465px] h-[366px] rounded-2xl fade-in border-2 border-text-light">
+                                    <span class="absolute top-4 right-4 py-0.5 px-2.5 text-3xl text-text-primary rounded-full cursor-pointer border border-bg-light-gray hover:bg-white bg-bg-light-gray transition-all duration-200" id="closeCopyModal">×</span>
+                                    <div class="gap-8 flex flex-col items-center justify-center">
+                                        <div class="w-full h-auto">
+                                            <div class="bg-[#8b85ff98] p-4 rounded-md">
+                                            </div>
+                                        </div>
+                                        <div class="gap-2 flex flex-col items-center justify-center">
+                                            <div class="text-2xl font-bold text-text-dark text-center">Parolanız Panoya Kopyalandı</div>
+                                            <p class="text-text-gray text-center"><strong>CTRL + V</strong> tuş kombinasyonunu kullanarak şifrenizi kullanabilirsiniz.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -173,130 +387,237 @@
         </section>
         <section class="w-full mt-16">
             <h2 class="text-4xl font-medium text-text-dark text-center mb-8 max-[540px]:text-3xl">
-                Lorem ipsum dolor sit amet
-                lorem ipsum?
+                Neden Güçlü Bir Şifre Kullanmalısınız?
             </h2>
             <p class="text-lg text-text-muted text-center mb-16 max-[540px]:text-base">
-                Officiis aperiam facere eum sit maxime ab officia voluptatum quaerat.
+                Güçlü bir şifre oluşturmak hesaplarınızı korumak için çok önemli bir adımdır. Şifrenizin eşsiz olması çok önemlidir.
             </p>
             <div class="gap-20 flex flex-col items-center justify-center px-[100px] max-[630px]:px-[20px]">
                 <div class="flex flex-col lg:flex-row items-center lg:space-x-10 space-y-4 lg:space-y-0">
                     <div class="gap-4 flex flex-col text-start lg:w-1/2 w-full">
-                        <h3 class="text-3xl mb-2">Lorem ipsum dolor sit amet?</h3>
+                        <h3 class="text-3xl mb-2">Şifre Uzunluğu: Hedeflerinizi Güvence Altına Alın</h3>
                         <p class="text-text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <p class="text-text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
+                            Şifrenizin uzunluğu, güvenliğini artıran en önemli faktörlerden biridir. En az 10 karakter uzunluğunda olan şifreler, daha kısa şifrelere göre çok daha güvenlidir. Şifrenizi ne kadar uzun yaparsanız, kırılması o kadar zor olacaktır. Uzun şifreler, özellikle rastgele seçilmiş karakterlerle oluşturulduğunda, güvenliğinizi büyük ölçüde artırır.
                         </p>
                     </div>
                     <div class="lg:w-1/2 w-full">
-                        <img src="/resimler/1.webp" class="overflow-hidden object-cover" alt="features-image" />
+                        <img width="523" height="326" loading="lazy" src="/resimler/sifreni-uzun-tut.webp" class="overflow-hidden object-cover" alt="Adam hedeflerini güvende tutmanın gururuyla işaretlediği hedefe bakıyor." />
                     </div>
                 </div>
                 <div class="flex flex-col lg:flex-row items-center lg:space-x-10 space-y-4 lg:space-y-0">
                     <div class="lg:w-1/2 w-full">
-                        <img src="/resimler/2.webp" class="overflow-hidden object-cover" alt="features-image" />
+                        <img width="523" height="326" loading="lazy" src="/resimler/karmasik-sifre-olustur.webp" class="overflow-hidden object-cover" alt="Karmaşık Şifreyi Özetleyen Sözlük Tutan bir kadın resmi" />
                     </div>
                     <div class="gap-4 flex flex-col text-start lg:w-1/2 w-full">
-                        <h3 class="text-3xl mb-2">Lorem ipsum dolor sit amet?</h3>
+                        <h3 class="text-3xl mb-2">Karmaşıklık: Harflerden Sayılara Her Şeyi Kullanın</h3>
                         <p class="text-text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <p class="text-text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
+                            Karmaşık şifreler, hem büyük hem de küçük harfleri, rakamları ve sembolleri içermelidir. Bu çeşitlilik, şifrenizi tahmin etmeyi zorlaştırır. Basit kelimeler yerine, rastgele seçilmiş karakterleri kullanmak şifrenizin güvenliğini artırır. Örneğin, "P@ssw0rd123!" gibi bir şifre, sadece "password" kelimesine göre çok daha güvenlidir.
                         </p>
                     </div>
                 </div>
                 <div class="flex flex-col lg:flex-row items-center lg:space-x-10 space-y-4 lg:space-y-0">
                     <div class="gap-4 flex flex-col text-start lg:w-1/2 w-full">
-                        <h3 class="text-3xl mb-2">Lorem ipsum dolor sit amet?</h3>
+                        <h3 class="text-3xl mb-2">
+                            Benzersizlik: Her Hesap İçin Farklı Şifre Kullanın
+                        </h3>
                         <p class="text-text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
+                            Her hesap için benzersiz şifreler kullanmak, güvenliğinizi artırmanın önemli bir yoludur. Bir şifre bir hesapta kırıldığında, diğer hesaplarınızın da tehlikeye girmemesi için her biri için farklı şifreler kullanmalısınız. Bu, özellikle aynı şifreyi birden fazla hesapta kullanma alışkanlığınız varsa, ciddi güvenlik risklerini azaltır.
                         </p>
                         <p class="text-text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
+                            Bu işlem hepimizin bildiği gibi bazen yönetmesi zor olabiliyor. Bu gibi durumlar için şifre yönetim uygulamaları kullanabilirsiniz. Örn: <a class="weight-600 italic hover-effect" href="https://passbolt.com">Passbolt</a>, <a class="weight-600 italic hover-effect" href="https://lastpass.com">Lastpass</a>, <a class="weight-600 italic hover-effect" href="https://bitwarden.com/">Bitwarden</a> vb.
                         </p>
                     </div>
                     <div class="lg:w-1/2 w-full">
-                        <img src="/resimler/3.webp" class="overflow-hidden object-cover" alt="features-image" />
+                        <img width="523" height="326" loading="lazy" src="/resimler/her-hesaba-yeni-sifre-olustur.webp" title="Güvenlik İçin Her Hesaba Farklı Şifre Oluştur" class="overflow-hidden object-cover" alt="Kullanıcı şifre oluşturduğu adetini simgeleyen sayılara bakıyor" />
                     </div>
                 </div>
                 <div class="flex flex-col lg:flex-row items-center lg:space-x-10 space-y-4 lg:space-y-0">
                     <div class="lg:w-1/2 w-full">
-                        <img src="/resimler/4.webp" class="overflow-hidden object-cover" alt="features-image" />
+                        <img width="523" height="326" loading="lazy" src="/resimler/anlasilabilir-sifre-olustur.webp" title="Anlaşılabilir Şifre Oluşturmak Hatırlanabilir Kılar" class="overflow-hidden object-cover" alt="Genç elinde büyüteçle soru işaretleri anlamlandırmaya çalışıyor." />
                     </div>
                     <div class="gap-4 flex flex-col text-start lg:w-1/2 w-full">
-                        <h3 class="text-3xl mb-2">Lorem ipsum dolor sit amet?</h3>
+                        <h3 class="text-3xl mb-2">
+                            Anlaşılabilirlik: Şifrenizi Anlamlı Hale Getirin
+                        </h3>
                         <p class="text-text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <p class="text-text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
+                            Şifrenizin kolayca hatırlanabilir olmasına rağmen başkaları tarafından tahmin edilemeyecek şekilde olması önemlidir. Rastgele kelimeler veya anlamsız karakter dizileri yerine, anlamlı fakat tahmin edilmesi zor kelimeler kullanabilirsiniz. Örneğin, "BüyükElma3!" gibi bir şifre hem hatırlanabilir hem de güvenlidir.
                         </p>
                     </div>
                 </div>
                 <div class="flex flex-col lg:flex-row items-center lg:space-x-10 space-y-4 lg:space-y-0">
                     <div class="gap-4 flex flex-col text-start lg:w-1/2 w-full">
-                        <h3 class="text-3xl mb-2">Lorem ipsum dolor sit amet?</h3>
+                        <h3 class="text-3xl mb-2">Karmaşıklık: Farklı Karakter Tiplerini Kullanın</h3>
                         <p class="text-text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <p class="text-text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
+                            Şifrenizde büyük ve küçük harflerin yanı sıra rakamlar ve semboller kullanmak, güvenliğini artırmanın en etkili yollarından biridir. Karmaşık şifreler, kırılması çok daha zor olan şifrelerdir. Farklı karakter tiplerini kullanarak, şifrenizin güvenliğini maksimum seviyeye çıkarabilirsiniz.
                         </p>
                     </div>
                     <div class="lg:w-1/2 w-full">
-                        <img src="/resimler/5.webp" class="overflow-hidden object-cover" alt="features-image" />
+                        <img loading="lazy" src="/resimler/sifre-olustururken-karmasikliga-dikkat-et.webp" title="Şifre Oluştururken Karmaşıklığa Dikkat Et" class="overflow-hidden object-cover" alt="Kadın karmaşık olan şifreyi temsil eden nesneleri inceliyor." />
                     </div>
                 </div>
                 <div class="flex flex-col lg:flex-row items-center lg:space-x-10 space-y-4 lg:space-y-0">
                     <div class="lg:w-1/2 w-full">
-                        <img src="/resimler/6.webp" class="overflow-hidden object-cover" alt="features-image" />
+                        <img width="523" height="326" loading="lazy" src="/resimler/sifre-olusturucu-ile-guvenli-gezin.webp" title="Şifre Oluşturucu Sayesinde Güvenli Şifrelere Sahip Ol" class="overflow-hidden object-cover" alt="Adam Şifre Oluştur uygulamasını kullanmanın rahatlığıyla keyiflice internette surf yapıyor.." />
                     </div>
                     <div class="gap-4 flex flex-col text-start lg:w-1/2 w-full">
-                        <h3 class="text-3xl mb-2">Lorem ipsum dolor sit amet?</h3>
+                        <h3 class="text-3xl mb-2">Güvenli Gezinme: İnternette Güvende Kalın</h3>
                         <p class="text-text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <p class="text-text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
+                            Güçlü şifreler kullanmak, çevrimiçi hesaplarınızın güvenliğini sağlamak için sadece bir adımdır. Aynı zamanda güvenli bir internet bağlantısı kullanmak, iki faktörlü kimlik doğrulama gibi ek güvenlik önlemlerini kullanmak da önemlidir. İnternette güvenli bir şekilde gezinmek, çevrimiçi varlığınızı korumanın en etkili yollarından biridir.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="w-full mb-16">
-            <h2 class="text-4xl font-medium text-text-dark text-center mb-8 max-[540px]:text-3xl">Sıkça Sorulan Sorular</h2>
+            <h2 class="text-4xl font-medium text-text-dark text-center mb-8 max-[540px]:text-3xl">Şifre Oluşturucu  Sıkça Sorulan Sorular</h2>
             <div class="gap-4 flex flex-col items-center justify-center px-[100px] max-[630px]:px-[20px]">
-                <div class="w-full border border-bg-primary rounded-md accordion-item">
-                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header">
-                        <h3 class="text-xl font-semibold">Lorem Ipsum dolar sit.</h3>
-                        <img src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                <div class="w-full border border-bg-primary rounded-md accordion-item accordion-active">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">8 Karakterli Şifre Nasıl Oluşturulur?</h3>
+                        <img width="523" height="326" loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
                     </div>
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quo doloremque deleniti quae eveniet earum magni mollitia culpa, debitis impedit quia quam quasi, error aperiam quisquam, esse et optio iusto.Beatae eaque ipsum maiores architecto, sint deleniti. </p>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>8 karakterli bir şifre oluşturmak için, büyük ve küçük harfler, rakamlar ve semboller kullanarak rastgele bir kombinasyon oluşturabilirsiniz. Örnek: "A1b@C2d#"</p>
+                    </div>
+                </div>
+
+                <div class="w-full border border-bg-primary rounded-md accordion-item accordion-active">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">6 Karakterli Şifre Nasıl Oluşturulur?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>6 karakterli bir şifre oluşturmak için, büyük ve küçük harfler ile rakamları kullanarak karmaşık bir kombinasyon oluşturabilirsiniz. Örnek: "A1b2C3"</p>
+                    </div>
+                </div>
+
+                <div class="w-full border border-bg-primary rounded-md accordion-item accordion-active">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">En İyi Şifre Nasıl Oluşturulur?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>En iyi şifreler uzun, karmaşık ve benzersizdir. Büyük ve küçük harfler, rakamlar ve semboller içermelidir. Ayrıca, her hesap için farklı şifreler kullanmanız önerilir. Şifre Oluşturucumuzu kullanarak hemen şimdi üretime başlayabilirsiniz.</p>
+                    </div>
+                </div>
+
+                <div class="w-full border border-bg-primary rounded-md accordion-item accordion-active">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">Dünyanın En Zor Şifresi Nedir?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>Dünyanın en zor şifresi, uzun, rastgele ve tahmin edilmesi imkansız bir kombinasyon olmalıdır. Örneğin, 16 karakterden oluşan ve büyük/küçük harfler, rakamlar ve semboller içeren bir şifre çok güçlü kabul edilir. Örnek: "G4t$!k1p?L9m^7sW"</p>
+                    </div>
+                </div>
+
+                <div class="w-full border border-bg-primary rounded-md accordion-item accordion-active">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">Şifre Nasıl Hazırlanır?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>Şifre hazırlarken, büyük ve küçük harfler, rakamlar ve semboller kullanarak karmaşık bir kombinasyon oluşturun. Şifrenizin tahmin edilmesi zor ve en az 8-10 karakter uzunluğunda olması önemlidir.</p>
+                    </div>
+                </div>
+
+                <div class="w-full border border-bg-primary rounded-md accordion-item accordion-active">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">Güvenli Bir Şifre Nasıl Oluşturulur?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>Güvenli bir şifre oluşturmak için, en az 10 karakter uzunluğunda, büyük ve küçük harfler, rakamlar ve semboller içeren rastgele bir kombinasyon oluşturun. Şifrenizi sık sık değiştirin ve her hesap için benzersiz şifreler kullanın.</p>
                     </div>
                 </div>
                 <div class="w-full border border-bg-primary rounded-md accordion-item">
-                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header">
-                        <h3 class="text-xl font-semibold">Lorem Ipsum dolar sit.</h3>
-                        <img src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">Şifre Oluşturucumuzu Kullanmak Güvenli mi?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
                     </div>
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, aperiam minima. Maiores laborum in enim non reprehenderit quod consectetur beatae voluptates magni, quia reiciendis fugit inventore aliquam, cumque a expedita!</p>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>Evet, şifre oluşturucumuzu kullanmak tamamen güvenlidir. Oluşturulan şifreler yalnızca sizin tarafınızdan görülebilir ve güvenliğiniz için kaydedilmez.</p>
+                    </div>
+                </div>
+                <div class="w-full border border-bg-primary rounded-md accordion-item">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">Neden Bir Şifre Oluşturucu Kullanmalıyım?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>Bir şifre oluşturucu, tahmin edilmesi zor ve güvenli şifreler oluşturmanıza yardımcı olur. Bu, çevrimiçi hesaplarınızın güvenliğini artırır ve veri ihlallerine karşı korunmanızı sağlar.</p>
+                    </div>
+                </div>
+                <div class="w-full border border-bg-primary rounded-md accordion-item">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">Her Hesabım İçin Özgün Birer Şifre Kullanmam Gerekiyor mu?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>Evet, her hesabınız için benzersiz şifreler kullanmanız önemlidir. Bu, bir hesabınızın güvenliği ihlal edilse bile diğer hesaplarınızın güvende kalmasını sağlar.</p>
+                    </div>
+                </div>
+                <div class="w-full border border-bg-primary rounded-md accordion-item">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">En Kötü 10 Şifre Hangileridir?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>En kötü şifreler genellikle tahmin edilmesi kolay olanlardır. Örnekler: "123456", "password", "12345678", "qwerty", "abc123", "111111", "letmein", "monkey", "1234", "passw0rd".</p>
+                    </div>
+                </div>
+                <div class="w-full border border-bg-primary rounded-md accordion-item">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">En İyi Şifre Oluşturma Aracı Hangisidir?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>En iyi şifre oluşturma aracı, güvenli ve rastgele şifreler oluşturabilen bir araçtır. Şifre oluşturucumuz, bu gereksinimleri karşılamakta ve kullanıcı dostu bir deneyim sunmaktadır.</p>
+                    </div>
+                </div>
+                <div class="w-full border border-bg-primary rounded-md accordion-item">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">Güçlü Bir Şifre İçin Gereklilikler Nelerdir?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>Güçlü bir şifre, en az 10 karakter uzunluğunda olmalı, büyük ve küçük harfler, rakamlar ve semboller içermelidir. Şifreler ayrıca her hesap için benzersiz olmalıdır.</p>
+                    </div>
+                </div>
+                <div class="w-full border border-bg-primary rounded-md accordion-item">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">Nasıl Rastgele Oluşturulmuş Bir Şifre Elde Edebilirim?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>Şifre oluşturucumuz, rastgele karakterler kullanarak güvenli şifreler oluşturur. Tek yapmanız gereken, istediğiniz şifre uzunluğunu ve karakter türlerini seçmek.</p>
+                    </div>
+                </div>
+                <div class="w-full border border-bg-primary rounded-md accordion-item">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">Şifre Oluşturucular Ele Geçirilebilir mi?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>Güvenli şifre oluşturucular, çevrimiçi olarak şifrelerinizi kaydetmez ve yalnızca sizin tarafınızdan görülebilir. Bu, ele geçirilme riskini minimize eder.</p>
+                    </div>
+                </div>
+                <div class="w-full border border-bg-primary rounded-md accordion-item">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">Şifreleri Depolamanın Güvenli Bir Yolu Var mı?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>Evet, şifre yöneticileri, şifrelerinizi güvenli bir şekilde saklamak için mükemmel bir yoldur. Bu araçlar, tüm şifrelerinizi şifrelenmiş bir biçimde saklar ve yalnızca ana şifrenizle erişilebilir kılar.</p>
+                    </div>
+                </div>
+                <div class="w-full border border-bg-primary rounded-md accordion-item">
+                    <div class="flex items-center justify-between p-8 text-text-primary cursor-pointer accordion-header accordion-active">
+                        <h3 class="text-xl font-semibold">Bir Şifreyi Güvenli Yapan Nedir?</h3>
+                        <img loading="lazy" src="/resimler/arrow-down.svg" class="size-6 accordion-icon" alt="accordion-arrow-icon" />
+                    </div>
+                    <div class="accordion-content accordion-active" style="max-height: 480px; opacity: 1; padding: 2rem;">
+                        <p>Güvenli bir şifre, uzun, karmaşık ve tahmin edilmesi zor olmalıdır. Büyük ve küçük harfler, rakamlar ve semboller içermeli ve her hesap için benzersiz olmalıdır.</p>
                     </div>
                 </div>
             </div>
@@ -304,114 +625,12 @@
     </div>
     <footer class="w-full fs-container p-3 bg-bg-primary">
         <div class="flex items-center justify-center">
-            <p class="text-text-gray text-sm text-center">©<span class="year"></span> sifre-olusturucu.com Tüm hakları saklıdır.</p>
+            <a href="https://sifreolusturucu.com" class="text-text-gray text-sm text-center">©<span class="year"></span> sifreolusturucu.com Tüm hakları saklıdır.</a>
         </div>
     </footer>
-    <script>
-        // Generate Password
-        document.addEventListener("DOMContentLoaded", function () {
-            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-            const lengthInput = document.getElementById('length');
-            const generatedPasswordInput = document.getElementById('generated-password');
-            const sifreolusturucuDiv = document.getElementById('sifreolusturucuDiv');
 
-            checkboxes.forEach(checkbox => {
-                checkbox.addEventListener('change', function () {
-                    const checkedCheckboxes = Array.from(checkboxes).filter(cb => cb.checked);
-                    if (checkedCheckboxes.length === 0) {
-                        this.checked = true;
-                    }
-                    updatePassword();
-                });
-            });
+    <script src="~/js/passwordGenerator.js"></script>
 
-            lengthInput.addEventListener('input', function () {
-                updatePassword();
-            });
-
-            window.updateLength = function (change) {
-                const currentValue = parseInt(lengthInput.value);
-                const newValue = currentValue + change;
-                if (newValue >= parseInt(lengthInput.min) && newValue <= parseInt(lengthInput.max)) {
-                    lengthInput.value = newValue;
-                    updatePassword();
-                }
-            }
-
-            window.updatePassword = function () {
-                const formData = new FormData();
-                formData.append('length', lengthInput.value);
-                formData.append('useUpper', document.querySelector('input[name="useUpper"]').checked);
-                formData.append('useLower', document.querySelector('input[name="useLower"]').checked);
-                formData.append('useNumber', document.querySelector('input[name="useNumber"]').checked);
-                formData.append('useSpecial', document.querySelector('input[name="useSpecial"]').checked);
-
-                fetch('@Url.Action("GeneratePassword", "Home")', {
-                    method: 'POST',
-                    body: formData
-                })
-                    .then(response => response.json())
-                    .then(data => {
-                        generatedPasswordInput.value = data.generatedPassword;
-                        sifreolusturucuDiv.className = `relative input-container validate-${data.securityScore}`;
-                    })
-                    .catch(error => console.error('Error:', error));
-            }
-
-            function copyPassword() {
-                var copyText = document.getElementById("generated-password");
-                copyText.select();
-                copyText.setSelectionRange(0, 99999);
-                document.execCommand("copy");
-                alert("Parola kopyalandı: " + copyText.value);
-            }
-
-            // Initial password generation
-            updatePassword();
-        });
-
-        function updateLengthValue(value) {
-            updatePassword();
-        }
-
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(header => {
-            header.addEventListener('click', () => {
-                const icon = header.querySelector('.accordion-icon');
-                const content = header.nextElementSibling;
-
-                icon.classList.toggle('accordion-active');
-                header.classList.toggle('accordion-active');
-
-                if (content.classList.contains('accordion-active')) {
-
-                    content.classList.remove('accordion-active');
-                    content.style.maxHeight = '0';
-                    content.style.opacity = '0';
-                    content.style.padding = '0 2rem';
-                } else {
-
-                    content.classList.add('accordion-active');
-
-                    content.style.padding = '0 2rem';
-                    content.style.maxHeight = content.scrollHeight + '0' + 'px';
-                    content.style.opacity = '1';
-
-                    setTimeout(() => {
-                        content.style.padding = '2rem';
-                    }, 100);
-                }
-            });
-        });
-
-
-
-
-        // Generate Current Year
-        const currentYear = new Date().getFullYear();
-        document.querySelector('.year').innerHTML = currentYear;
-
-    </script>
 </body>
 
 </html>
