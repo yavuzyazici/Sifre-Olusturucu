@@ -18,6 +18,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\Masaüstü\KişiselYazılım\Yazilim\Projeler\SifreOlusturucu
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/Masaüstü/KişiselYazılım/Yazilim/Projeler/SifreOlusturucu/Views/Blog/EDevletSifreOlusturucu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xFRGV2bGV0U2lmcmVPbHVzdHVydWN1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Masaüstü/KişiselYazılım/Yazilim/Projeler/SifreOlusturucu/Views/Blog/GucluSifreNasilOlusturulur.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xHdWNsdVNpZnJlTmFzaWxPbHVzdHVydWx1ci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Masaüstü/KişiselYazılım/Yazilim/Projeler/SifreOlusturucu/Views/Blog/sablon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xzYWJsb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Masaüstü/KişiselYazılım/Yazilim/Projeler/SifreOlusturucu/Views/Error/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRXJyb3I0MDQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Masaüstü/KişiselYazılım/Yazilim/Projeler/SifreOlusturucu/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
