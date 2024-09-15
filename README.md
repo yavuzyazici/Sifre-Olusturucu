@@ -10,6 +10,9 @@ Live demo available at: [Sifre Oluşturucu](https://www.sifreolusturucu.com)
 Preview:
 ![Live Preview](https://sifreolusturucu.com/resimler/ReadmeImage1.jpg)  
 
+Lighthouse:
+![Live Preview](https://sifreolusturucu.com/resimler/LightShot.jpg)
+
 ## Table of Contents
 
 - [Features](#features)
