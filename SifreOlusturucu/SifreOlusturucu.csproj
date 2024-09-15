@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\NewFolder1\**" />
+    <Compile Remove="wwwroot\_next\**" />
+    <Content Remove="wwwroot\NewFolder1\**" />
+    <Content Remove="wwwroot\_next\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder1\**" />
+    <EmbeddedResource Remove="wwwroot\_next\**" />
+    <None Remove="wwwroot\NewFolder1\**" />
+    <None Remove="wwwroot\_next\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\icon-1.png" />
+    <Content Remove="wwwroot\icon-2.png" />
+    <Content Remove="wwwroot\index.txt" />
+    <Content Remove="wwwroot\light-hero-banner.webp" />
+    <Content Remove="wwwroot\sifre-olusturucu.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\sifre-olusturucu.svg" />
+  </ItemGroup>
+
+</Project>

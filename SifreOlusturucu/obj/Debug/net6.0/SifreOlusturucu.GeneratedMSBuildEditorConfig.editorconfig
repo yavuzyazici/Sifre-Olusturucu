@@ -1,0 +1,43 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SifreOlusturucu
+build_property.RootNamespace = SifreOlusturucu
+build_property.ProjectDir = E:\Github\Sifre-Olusturucu\SifreOlusturucu\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\Github\Sifre-Olusturucu\SifreOlusturucu
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Github/Sifre-Olusturucu/SifreOlusturucu/Views/Blog/EDevletSifreOlusturucu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xFRGV2bGV0U2lmcmVPbHVzdHVydWN1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Github/Sifre-Olusturucu/SifreOlusturucu/Views/Blog/GucluSifreNasilOlusturulur.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xHdWNsdVNpZnJlTmFzaWxPbHVzdHVydWx1ci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Github/Sifre-Olusturucu/SifreOlusturucu/Views/Blog/sablon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xzYWJsb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Github/Sifre-Olusturucu/SifreOlusturucu/Views/Error/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRXJyb3I0MDQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Github/Sifre-Olusturucu/SifreOlusturucu/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Github/Sifre-Olusturucu/SifreOlusturucu/Views/Home/OldIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPbGRJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
