@@ -1,3 +1,10 @@
+*.bin
+*.zip
+*.v2
+*.dll
+SifreOlusturucu/.vs/
+SifreOlusturucu/bin/
+SifreOlusturucu/obj/
 SifreOlusturucu/Properties/PublishProfiles/FolderProfile1.pubxml
 SifreOlusturucu/Properties/PublishProfiles/FolderProfile1.pubxml.user
 SifreOlusturucu/SifreOlusturucu.csproj.user
