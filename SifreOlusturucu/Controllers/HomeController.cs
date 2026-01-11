@@ -8,6 +8,7 @@ namespace SifreOlusturucu.Controllers
 {
     public class HomeController : Controller
     {
+        [Route("/")]
         public IActionResult Index()
         {
             string passwordS = PasswordGenerate.GeneratePassword(true, true, false, true, 16);

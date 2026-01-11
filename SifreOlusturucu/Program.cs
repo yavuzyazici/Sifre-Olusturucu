@@ -17,14 +17,11 @@ app.UseAuthorization();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}");
-
-    endpoints.MapControllerRoute(
         name: "sitemap",
         pattern: "sitemap.xml",
         defaults: new { controller = "Sitemap", action = "Index" });
 
+    /*
     endpoints.MapControllerRoute(
     name: "EDevletSifreOlusturucu",
     pattern: "blog/e-devlet-sifre-olusturucu",
@@ -34,6 +31,7 @@ app.UseEndpoints(endpoints =>
         name: "GuclutSifreNasilOlusturulur",
         pattern: "blog/guclu-sifre-nasil-olusturulur",
         defaults: new { controller = "Blog", action = "GuclutSifreNasilOlusturulur" });
+    */
 });
 
 app.Run();
