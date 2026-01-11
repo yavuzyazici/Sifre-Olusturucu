@@ -16,11 +16,9 @@ namespace SifreOlusturucu.Controllers
 
         private List<SitemapNode> GetSitemapNodes()
         {
-            // Create your list of sitemap nodes here
             var nodes = new List<SitemapNode>
             {
-                new SitemapNode { Url = "https://sifreolusturucu.com/", Priority = 1.0 },
-                // Add more URLs as needed
+                new SitemapNode { Url = "https://www.sifreolusturucu.com/", Priority = 1.0 },
             };
             return nodes;
         }
