@@ -1,5 +1,0 @@
-﻿﻿User-agent: *
-Disallow: /Blog/EDevletSifreOlusturucu
-Disallow: /Home/Index
-
-Sitemap: https://sifreolusturucu.com/sitemap.xml

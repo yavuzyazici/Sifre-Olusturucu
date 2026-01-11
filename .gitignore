@@ -9,3 +9,7 @@ SifreOlusturucu/Properties/PublishProfiles/FolderProfile1.pubxml
 SifreOlusturucu/Properties/PublishProfiles/FolderProfile1.pubxml.user
 SifreOlusturucu/SifreOlusturucu.csproj.user
 SifreOlusturucu/obj/Release/net6.0/
+/SifreOlusturucu/bin
+/SifreOlusturucu/.vs/SifreOlusturucu/FileContentIndex
+/SifreOlusturucu/obj
+/SifreOlusturucu/.vs
