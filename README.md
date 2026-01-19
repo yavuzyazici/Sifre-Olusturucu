@@ -1,17 +1,20 @@
 # Password Generator - sifreolusturucu.com
 
-Effortlessly create secure and customizable passwords using our tool at sifreolusturucu.com. Generate passwords with varying lengths, character sets, and other security options to meet your specific needs.
+Effortlessly create secure and customizable passwords using our tool at **sifreolusturucu.com**. Generate passwords with varying lengths, character sets, and other security options to meet your needs.
 
+🌐 **Live Demo:**  
+[Sifre Oluşturucu](https://www.sifreolusturucu.com)
 
-Live demo available at: [Sifre Oluşturucu](https://www.sifreolusturucu.com)
+🌍 **Languages:**  
+🇹🇷 [Türkçe](README-TR.md) | 🇬🇧 English
 
-![Og Image Preview](https://sifreolusturucu.com/resimler/sifre-olusturucu-og.png)  
+![Og Image Preview](https://www.sifreolusturucu.com/resimler/sifre-olusturucu-og.png)  
 
 Preview:
-![Live Preview](https://sifreolusturucu.com/resimler/ReadmeImage1.jpg)  
+![Live Preview](https://www.sifreolusturucu.com/resimler/ReadmeImage1.jpg)  
 
 Lighthouse:
-![Live Preview](https://sifreolusturucu.com/resimler/LightShot.jpg)
+![Live Preview](https://www.sifreolusturucu.com/resimler/LightShot.jpg)
 
 ## Table of Contents
 
