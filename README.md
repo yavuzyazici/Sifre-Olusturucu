@@ -1,42 +1,74 @@
-# sv
+# Password Generator - sifreolusturucu.com
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Effortlessly create secure and customizable passwords using our tool at **sifreolusturucu.com**. Generate passwords with varying lengths, character sets, and other security options to meet your needs.
 
-## Creating a project
+🌐 **Live Demo:**  
+[Sifre Oluşturucu](https://www.sifreolusturucu.com)
 
-If you're seeing this, you've probably already done this step. Congrats!
+🌍 **Languages:**  
+🇹🇷 [Türkçe](README-TR.md) | 🇬🇧 English
 
-```sh
-# create a new project
-npx sv create my-app
-```
+![Og Image Preview](https://www.sifreolusturucu.com/resimler/sifre-olusturucu-og.png)  
 
-To recreate this project with the same configuration:
+Preview:
+![Live Preview](https://www.sifreolusturucu.com/resimler/ReadmeImage1.jpg)  
 
-```sh
-# recreate this project
-npx sv@0.16.1 create --template minimal --types ts --no-install .
-```
+Lighthouse:
+![Live Preview](https://www.sifreolusturucu.com/resimler/LightShot.jpg)
 
-## Developing
+## Table of Contents
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- [Features](#features)
+- [Usage](#usage)
+- [Options](#options)
+- [Contributing](#contributing)
 
-```sh
-npm run dev
+## Features
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+- **Instant Password Generation**: Generate strong passwords instantly with a single click.
+- **Customizable Options**: Set password length, and choose between numbers, symbols, uppercase, and lowercase letters.
+- **Copy Functionality**: Easily copy generated passwords to your clipboard with one click.
+- **User Preferences**: Save your preferred password settings for future use.
+- **Responsive Design**: Works seamlessly on mobile, tablet, and desktop devices.
 
-## Building
+## Usage
 
-To create a production version of your app:
+### Steps to Generate a Password
 
-```sh
-npm run build
-```
+1. Open [sifreolusturucu.com](https://www.sifreolusturucu.com).
+2. Select your desired options:
+   - **Length**: Set the length of your password.
+   - **Include Numbers**: Toggle to include/exclude numbers.
+   - **Include Symbols**: Toggle to include/exclude symbols.
+   - **Include Uppercase/Lowercase Letters**: Select to include or exclude uppercase/lowercase letters.
+3. Click the **"Generate"** button to instantly create a secure password.
+4. Use the **"Copy"** button to copy the password to your clipboard.
 
-You can preview the production build with `npm run preview`.
+### Example:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+**Settings:**
+- Length: 12 characters
+- Include Numbers: Yes
+- Include Symbols: Yes
+- Include Uppercase Letters: Yes
+- Include Lowercase Letters: Yes
+
+**Generated Password:**  
+`X9@jF2!lH7#Z`
+
+### Copy Output
+
+After generating a password, click the "Copy" button to quickly add the password to your clipboard for easy use.
+
+## Options
+
+You can customize the following options when generating your password:
+
+- **Password Length**: Select the length of the password (e.g., 8, 12, 16, etc.).
+- **Include Numbers**: Choose whether or not to include numbers in the password.
+- **Include Symbols**: Decide whether to include special characters (e.g., `@`, `#`, `$`) in the password.
+- **Include Uppercase/Lowercase Letters**: Toggle the inclusion of uppercase and lowercase letters.
+
+## Contributing
+
+Contributions are welcome! Please fork this repository and submit pull requests for any features, fixes, or improvements you would like to see.

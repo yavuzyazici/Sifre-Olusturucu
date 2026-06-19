@@ -1,0 +1,215 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|e:\\github\\sifre-olusturucu\\sifreolusturucu\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|e:\\github\\sifre-olusturucu\\sifreolusturucu\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|e:\\github\\sifre-olusturucu\\sifreolusturucu\\wwwroot\\css\\tailwind.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:wwwroot\\css\\tailwind.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|e:\\github\\sifre-olusturucu\\sifreolusturucu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|e:\\github\\sifre-olusturucu\\sifreolusturucu\\views\\blog\\edevletsifreolusturucu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:views\\blog\\edevletsifreolusturucu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|e:\\github\\sifre-olusturucu\\sifreolusturucu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|e:\\github\\sifre-olusturucu\\sifreolusturucu\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|e:\\github\\sifre-olusturucu\\sifreolusturucu\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|e:\\github\\sifre-olusturucu\\sifreolusturucu\\controllers\\sitemapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:controllers\\sitemapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|e:\\github\\sifre-olusturucu\\sifreolusturucu\\models\\password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:models\\password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|e:\\github\\sifre-olusturucu\\sifreolusturucu\\views\\error\\error404.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{485CD41F-9A66-45E4-94BA-9AE711359E59}|SifreOlusturucu.csproj|solutionrelative:views\\error\\error404.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\css\\criticial.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "style.css",
+              "DocumentMoniker": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
+              "ToolTip": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "wwwroot\\css\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-15T14:17:43.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwPAAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-04T08:28:09.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "tailwind.css",
+              "DocumentMoniker": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\wwwroot\\css\\tailwind.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\tailwind.css",
+              "ToolTip": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\wwwroot\\css\\tailwind.css",
+              "RelativeToolTip": "wwwroot\\css\\tailwind.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-03T18:13:22.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EDevletSifreOlusturucu.cshtml",
+              "DocumentMoniker": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Views\\Blog\\EDevletSifreOlusturucu.cshtml",
+              "RelativeDocumentMoniker": "Views\\Blog\\EDevletSifreOlusturucu.cshtml",
+              "ToolTip": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Views\\Blog\\EDevletSifreOlusturucu.cshtml",
+              "RelativeToolTip": "Views\\Blog\\EDevletSifreOlusturucu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-03T18:07:12.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T17:52:53.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BlogController.cs",
+              "ToolTip": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "Controllers\\BlogController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T17:46:41.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "criticial.css",
+              "DocumentMoniker": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\css\\criticial.css",
+              "ToolTip": "F:\\Masa\u00FCst\u00FC\\Ki\u015FiselYaz\u0131l\u0131m\\Yazilim\\Projeler\\SifreOlusturucu\\wwwroot\\css\\criticial.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-16T17:57:31.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "package.json",
+              "DocumentMoniker": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-08T12:45:03.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SitemapController.cs",
+              "DocumentMoniker": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Controllers\\SitemapController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SitemapController.cs",
+              "ToolTip": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Controllers\\SitemapController.cs",
+              "RelativeToolTip": "Controllers\\SitemapController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T23:21:11.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Error404.cshtml",
+              "DocumentMoniker": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Views\\Error\\Error404.cshtml",
+              "RelativeDocumentMoniker": "Views\\Error\\Error404.cshtml",
+              "ToolTip": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Views\\Error\\Error404.cshtml",
+              "RelativeToolTip": "Views\\Error\\Error404.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T22:58:13.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Password.cs",
+              "DocumentMoniker": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Models\\Password.cs",
+              "RelativeDocumentMoniker": "Models\\Password.cs",
+              "ToolTip": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Models\\Password.cs",
+              "RelativeToolTip": "Models\\Password.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAADwvwcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T15:34:22.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Github\\Sifre-Olusturucu\\SifreOlusturucu\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAA7wFoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T13:48:18.637Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
