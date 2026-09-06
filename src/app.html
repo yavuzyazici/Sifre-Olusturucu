@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="tr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="512x512" />
+		<link rel="apple-touch-icon" href="/favicon.png" sizes="512x512" />
+
+		<!-- Google Analytics: bağlantı el sıkışmasını erkene çek -->
+		<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+
+		<!--
+			Ekranın üst kısmında görünen font ağırlıkları önden yükleniyor.
+			Preload olmadan tarayıcı önce poppins.css'i indirip ayrıştırmak, sonra
+			font dosyalarını istemek zorunda kalır; bu zincir yüzünden metin önce
+			yedek fontla çizilip sonra yerinden oynuyordu.
+			Türkçe metin hem latin (ı, ç, ö, ü) hem latin-ext (ş, ğ, İ) alt kümesini
+			kullandığı için her ağırlığın iki dosyası da gerekiyor. Toplam ~52 KB.
+		-->
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="/css/Fonts/pxiEyp8kv8JHgFVrJJfecg.woff2" />
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="/css/Fonts/pxiEyp8kv8JHgFVrJJnecmNE.woff2" />
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="/css/Fonts/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2" />
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="/css/Fonts/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2" />
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="/css/Fonts/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2" />
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="/css/Fonts/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2" />
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="/css/Fonts/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2" />
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="/css/Fonts/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2" />
+
+		<!-- Ekranın üstündeki görsel (hero arka planı artık CSS ile çiziliyor) -->
+		<link rel="preload" as="image" href="/sifre-olusturucu.svg" />
+
+		<link rel="stylesheet" href="/css/Fonts/poppins.css" />
+
+		<meta name="application-name" content="Şifre Oluşturucu" />
+		<meta name="author" content="Yavuz Selim Yazıcı" />
+		<meta name="theme-color" content="#f5f5f5" />
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-R7H1YBH557"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-R7H1YBH557', {
+				cookie_flags: 'SameSite=None;Secure',
+				cookie_domain: 'sifreolusturucu.com'
+			});
+		</script>
+
+		%sveltekit.head%
+	</head>
+	<body
+		data-sveltekit-preload-data="hover"
+		class="container overflow-x-hidden transition-all duration-200 ease-linear"
+	>
+		<div style="display: contents">%sveltekit.body%</div>
+
+		<!--
+			Açılış betiği.
+
+			SvelteKit paketinin inip hidrasyonun tamamlanmasını beklemeden şifreyi
+			üretir; sayfa ayrıştırılırken senkron çalıştığı için alan hiçbir zaman
+			boş görünmez. Üretilen değer window.__sifreOnyukleme üzerinden
+			PasswordGenerator bileşenine devredilir, o da aynı değerle hidrasyona
+			girer — yani ekranda ikinci bir değişim olmaz.
+
+			Mantığın aslı src/lib/password.ts içinde; burada bilerek küçük bir
+			kopyası duruyor, çünkü modül olarak yüklemek tam da kaçınmak istediğimiz
+			ağ gecikmesini geri getirirdi. İkisini birlikte güncelleyin.
+		-->
+		<script>
+			(function () {
+				try {
+					var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+					var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+					var NUMBERS = '0123456789';
+					var SPECIAL = '!@#$%^&*()_+~`|}{[]:;?><,./-';
+					var KEYS = ['useUpper', 'useLower', 'useNumber', 'useSpecial'];
+
+					var readBoolean = function (key) {
+						var raw = localStorage.getItem(key);
+						return raw === null ? true : raw === 'true';
+					};
+
+					var sets = {};
+					var anySelected = false;
+					for (var k = 0; k < KEYS.length; k++) {
+						sets[KEYS[k]] = readBoolean(KEYS[k]);
+						anySelected = anySelected || sets[KEYS[k]];
+					}
+					if (!anySelected) {
+						for (var j = 0; j < KEYS.length; j++) sets[KEYS[j]] = true;
+					}
+
+					var length = 18;
+					var stored = parseInt(localStorage.getItem('passwordLength'), 10);
+					if (stored >= 1 && stored <= 50) length = stored;
+
+					var pool =
+						(sets.useUpper ? UPPER : '') +
+						(sets.useLower ? LOWER : '') +
+						(sets.useNumber ? NUMBERS : '') +
+						(sets.useSpecial ? SPECIAL : '');
+
+					// Modülo sapması olmadan kriptografik rastgelelik
+					var limit = Math.floor(4294967296 / pool.length) * pool.length;
+					var buffer = new Uint32Array(1);
+					var password = '';
+					for (var i = 0; i < length; i++) {
+						do {
+							crypto.getRandomValues(buffer);
+						} while (buffer[0] >= limit);
+						password += pool[buffer[0] % pool.length];
+					}
+
+					var score = length < 5 ? 1 : length <= 7 ? 2 : length <= 9 ? 3 : length <= 11 ? 4 : 5;
+
+					window.__sifreOnyukleme = {
+						password: password,
+						length: length,
+						sets: sets,
+						score: score
+					};
+
+					// Hidrasyona kadar geçen sürede ekranı da doğru duruma getir
+					var field = document.getElementById('generated-password');
+					if (field) field.value = password;
+
+					var range = document.getElementById('length');
+					if (range) range.value = String(length);
+
+					var display = document.getElementById('password-length-display');
+					if (display) display.textContent = String(length);
+
+					var wrapper = document.getElementById('sifre-olusturucu');
+					if (wrapper && wrapper.parentElement) {
+						wrapper.parentElement.className = wrapper.parentElement.className.replace(
+							/strength-\d/,
+							'strength-' + score
+						);
+					}
+
+					for (var c = 0; c < KEYS.length; c++) {
+						var box = document.querySelector('input[name="' + KEYS[c] + '"]');
+						if (box) box.checked = sets[KEYS[c]];
+					}
+				} catch (error) {
+					// Açılış betiği başarısız olursa bileşen devralır.
+				}
+			})();
+		</script>
+	</body>
+</html>

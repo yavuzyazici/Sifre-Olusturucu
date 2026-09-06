@@ -1,21 +1,32 @@
+# Bağımlılıklar
+node_modules/
+
+# SvelteKit / Vite
+.svelte-kit/
+build/
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Ortam değişkenleri
+.env
+.env.*
+!.env.example
+
+# IDE / editör durumu
+.vs/
+.idea/
+.DS_Store
+
 # Binary / arşiv artefaktları
 *.bin
 *.zip
 *.v2
 *.dll
 
-# Bağımlılıklar
-node_modules/
-
-# IDE / editör durumu
-.vs/
-.idea/
-
-# .NET derleme çıktıları
+# --- Legacy (.NET) projesi ---
 /Legacy/SifreOlusturucu/bin/
 /Legacy/SifreOlusturucu/obj/
 /Legacy/SifreOlusturucu/SifreOlusturucu.csproj.user
-
-# Yayınlama profilleri (yerel)
 /Legacy/SifreOlusturucu/Properties/PublishProfiles/FolderProfile1.pubxml
 /Legacy/SifreOlusturucu/Properties/PublishProfiles/FolderProfile1.pubxml.user
