@@ -1,6 +1,12 @@
 import { faq } from './faq';
 
-export const SITE_URL = 'https://sifreolusturucu.com';
+/**
+ * Kanonik adres www'ludur: sunucu `sifreolusturucu.com` isteklerini
+ * `www.sifreolusturucu.com` adresine 301 ile yönlendiriyor. Kanonik etiketi,
+ * og:url ve site haritası yönlendirilen değil yönlendirilen hedefi
+ * göstermelidir, yoksa her kanonik adres bir 301 üzerinden geçer.
+ */
+export const SITE_URL = 'https://www.sifreolusturucu.com';
 export const OG_IMAGE = `${SITE_URL}/resimler/sifre-olusturucu-og.png`;
 
 export const GITHUB_URL = 'https://github.com/yavuzyazici/Sifre-Olusturucu';
